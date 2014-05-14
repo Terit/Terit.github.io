@@ -1,0 +1,388 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"els",
+				"elsif	elsif ..."
+			],
+			[
+				"ea",
+				"eav	each_value { |val| .. }"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"backg",
+				"background-attachment"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"inle",
+				"inline-block"
+			],
+			[
+				"stats",
+				"statsSheet"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ma",
+				"marginLeft"
+			],
+			[
+				"max",
+				"maxHours"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"bo",
+				"boxWidth"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"lef",
+				"padding-left"
+			],
+			[
+				"bott",
+				"margin-bottom"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"o",
+				"optgroup	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 33,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"goto",
+				"Goto Documentation"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Kawasaki Bombs/index.html",
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Kawasaki Bombs/script.js",
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Rails_Project/blogger/config/database.yml",
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Kawasaki Bombs/style.css",
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Ruby_Tutorial/Ruby_Project/learn_ruby/08_book_titles/book.rb",
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Ruby_Tutorial/Ruby_Project/learn_ruby/09_timer/timer.rb",
+		"/Users/andrewtheriault/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Ruby_Tutorial/Ruby_Project/learn_ruby/04_pig_latin/pig_latin.rb",
+		"/Users/andrewtheriault/Documents/The_Odin_Project/Ruby_Tutorial/Ruby_Project/learn_ruby/03_simon_says/simon_says.rb",
+		"/Users/andrewtheriault/Documents/The Odin Project/Kawasaki Bombs/script.js",
+		"/Users/andrewtheriault/Documents/The Odin Project/Kawasaki Bombs/style.css",
+		"/Users/andrewtheriault/Documents/The Odin Project/Kawasaki Bombs/index.html",
+		"/Users/andrewtheriault/Documents/The Odin Project/Ruby Tutorial/personal_chef.rb",
+		"/Users/andrewtheriault/Documents/The Odin Project/Ruby Tutorial/schedule_maker.rb",
+		"/Users/andrewtheriault/Documents/The Odin Project/Etch-a-Sketch/index.html",
+		"/Users/andrewtheriault/Documents/The Odin Project/Etch-a-Sketch/style.css",
+		"/Users/andrewtheriault/Documents/The Odin Project/Etch-a-Sketch/script.js",
+		"/Users/andrewtheriault/Documents/The Odin Project/Google Site/google-homepage/google site/index.html",
+		"/Users/andrewtheriault/Documents/The Odin Project/index.html",
+		"/Users/andrewtheriault/Documents/The Odin Project/style.css",
+		"/Users/andrewtheriault/Documents/The Odin Project/GoogleSite.sublime-project",
+		"/Users/andrewtheriault/Documents/School Website/Jim-Learning-Site/stylesheets/app.css",
+		"/Users/andrewtheriault/Documents/School Website/Jim-Learning-Site/stylesheets/normalize.css",
+		"/Users/andrewtheriault/Documents/School Website/Jim-Learning-Site/index.html",
+		"/Users/andrewtheriault/Documents/School Website/stylesheets/normalize.css",
+		"/Users/andrewtheriault/Documents/School Website/stylesheets/app.css",
+		"/Users/andrewtheriault/Test/index.html",
+		"/Users/andrewtheriault/Test/style.css",
+		"/Users/andrewtheriault/Documents/School Website/Jim-Learning-Site/stylesheets/app.min.css",
+		"/Users/andrewtheriault/Documents/School Website/account.html",
+		"/Users/andrewtheriault/Documents/School Website/Jim-Learning-Site/javascripts/vendor/modernizr.js",
+		"/Users/andrewtheriault/Documents/School Website/Jim-Learning-Site/config.rb",
+		"/Users/andrewtheriault/Documents/School Website/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<",
+			"$(\".card\")",
+			"/p>",
+			"p",
+			"<p>",
+			"Grapes"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 33,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"normalize.css",
+				"/Users/andrewtheriault/Documents/School Website/stylesheets/normalize.css"
+			],
+			[
+				"no",
+				"/Users/andrewtheriault/Documents/School Website/stylesheets/normalize.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 96.0,
+	"status_bar_visible": true
+}

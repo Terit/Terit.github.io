@@ -1,3 +1,45 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Lato', Arial, sans-serif;
+}
 body {
-	background-color: blue;
+	background-color: #0099FF;
+	margin: 0px;
+}
+#header {
+	background-color: white;
+	color: blue;
+	height: 80px;
+	width: 100%;
+	font-size: 32px;
+	display: -webkit-flex;
+	display: flex;
+}
+#header li {
+	margin: auto;
+	display: inline;
+	color: #0099FF;
+}
+#contents {
+	width: 100%;
+	height: 400px;
+	display: -webkit-flex;
+	display: flex;
+}
+#contents div {
+	background-color: white;
+	color: #0099FF;
+	width: 600px;
+	margin: auto;
+}
+#contents div h1 {
+	padding-left: 10px;
+	height: 60px;
+	border-bottom: 2px solid #0099FF;
+}
+#contents div p {
+	padding: 5px;
+	padding-bottom: 20px;
 }
