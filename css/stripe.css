@@ -1,0 +1,58 @@
+#stripes3{
+    width: 100%;
+    height: 5px;
+    left: 0;
+    overflow: hidden;
+}
+.stripe3 {
+    width: 10%;
+    height: 7px;
+    float: left;
+}
+#stripes3 > .stripe3:before{
+    content: "";
+    display: block;
+}
+ 
+#stripes3 .item1 {
+    /* First background color */
+    background: #dd4f5b;    
+}
+#stripes3 .item2:before { 
+    /* The next stripe's color */
+    border: 10px solid #ededef;
+    /* This is the triangle bottom left shape/sharp angle at the end of each block on the stripe */
+    border-left-color: #dd4f5b;
+}
+#stripes3 .item3:before { 
+    border: 10px solid #1b4670;
+    border-left-color: #ededef;
+}
+#stripes3 .item4:before {
+    border: 10px solid #ededef;
+    border-left-color: #1b4670;
+}
+#stripes3 .item5:before {
+    border: 10px solid #dd4f5b;
+    border-left-color: #ededef;
+ }
+#stripes3 .item6:before {
+    border: 10px solid #ededef;
+    border-left-color: #dd4f5b;
+ }
+#stripes3 .item7:before {
+    border: 10px solid #1b4670;
+    border-left-color: #ededef;
+ }
+#stripes3 .item8:before {
+    border: 10px solid #ededef;
+    border-left-color: #1b4670;
+ }
+#stripes3 .item9:before { 
+    border: 10px solid #dd4e5a;
+    border-left-color: #ededef;
+ }
+#stripes3 .item10:before { 
+    border: 10px solid #ededef;
+    border-left-color: #dd4e5a;
+ }

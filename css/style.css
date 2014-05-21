@@ -7,13 +7,13 @@
 body {
 	background-color: #0099FF;
 	margin: 0px;
+	margin-bottom: 40px;
 }
 #header {
 	background-color: white;
 	color: blue;
 	height: 80px;
 	width: 100%;
-	font-size: 32px;
 	display: -webkit-flex;
 	display: flex;
 }
@@ -21,6 +21,14 @@ body {
 	margin: auto;
 	display: inline;
 	color: #0099FF;
+	padding: 0.5em;
+}
+#header li:last-child {
+	padding-right: 1em;
+}
+#header li:first-child {
+	flex: 1;
+	font-size: 32px;
 }
 #contents {
 	width: 100%;
@@ -42,4 +50,32 @@ body {
 #contents div p {
 	padding: 5px;
 	padding-bottom: 20px;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: #0099FF;
+}
+a:hover {
+	text-decoration: underline;
+}
+i {
+	padding-right: 3px;
+}
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+}
+footer ul {
+	width: 400px;
+	margin: 0 auto;
+}
+footer li {
+	display: inline;
+	color: white;
+	padding: 0.75em;
 }
