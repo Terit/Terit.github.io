@@ -5,11 +5,24 @@
 	font-family: 'Lato', Arial, sans-serif;
 }
 body {
-	/*background: url(../images/sublime.png) no-repeat;
-	background-position: 0 0;*/
-	margin: 0px;
 	margin-bottom: 40px;
+}
+.section {
+	z-index: -1;
+}
+.section:first-child {
+	background: url(../images/victoria.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.section:nth-child(2) {
 	background-color: #0099FF;
+}
+.section:nth-child(3) {
+	background: url(../images/sublime.png);
+	background-position: 0 0;
+}
+.section.topped {
+	margin-top: 45px;
 }
 #header {
 	background-color: white;
@@ -19,15 +32,18 @@ body {
 	display: -webkit-flex;
 	display: flex;
 	margin-top: 18%;
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    transition: height 0.3s;
+	float: left;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 #header.topped {
 	position: fixed;
 	top: 0;
 	left: 0;
 	margin-top: 0;
+	float: none;
 }
 #header li {
 	margin: auto;
@@ -48,11 +64,10 @@ body {
 	margin-top: -18px;
 }
 #contents {
-	width: 100%;
+	/*width: 100%;
 	height: 2000px;
 	display: -webkit-flex;
-	display: flex;
-	visibility: hidden;
+	display: flex;*/
 }
 #contents div {
 	background-color: white;
@@ -89,11 +104,15 @@ footer {
 	height: 40px;
 }
 footer ul {
-	width: 400px;
+	width: 250px;
 	margin: 0 auto;
+	color: white;
+	padding: 0;
 }
 footer li {
 	display: inline;
-	color: white;
 	padding: 0.75em;
+}
+footer li a:visited {
+	color: white;
 }
