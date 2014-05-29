@@ -15,12 +15,12 @@ $(document).ready(function() {
   
     onLeave: function(anchorLink, index){
       //using index
-      if(index == '2'){
-        $('#header').addClass('topped');
+      if(index == '2' || '3'){
+        $('header').addClass('topped');
         $('.section').addClass('topped');
       }
       if(index == '1'){
-        $('#header').removeClass('topped');
+        $('header').removeClass('topped');
       }
     }
   });
