@@ -10,8 +10,8 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-### [Photographic Memory](http://www.photographic-memory.herokuapp.com)
-![Photographic Memory](/images/photomemory.png)
+### [Photographic Memory](http://photographic-memory.herokuapp.com)
+[![Photographic Memory](/images/photomemory.png)](http://photographic-memory.herokuapp.com)
 
 <br/>
 
