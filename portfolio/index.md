@@ -17,12 +17,11 @@ image:
 
 A memory match game using *Instagram* hashtags.
 Built using a Sinatra framework and Javascript front end.
-[source](https://github.com/Terit/photographic-memory)
+[source code](https://github.com/Terit/photographic-memory)
 <br/>
 
 ### [Rotten Mangoes](http://www.github.com/Terit/Rotten-Mangoes)
-![Rotten Mangoes](/images/rottenmangoes.png)
-<a href="http://www.github.com/Terit/Rotten-Mangoes" target="_blank"><img src="/images/photomemory.png"></a>
+<a href="http://www.github.com/Terit/Rotten-Mangoes" target="_blank"><img src="/images/rottenmangoes.png"></a>
 <br/>
 
 My first Ruby on Rails app, a Rotten Tomatoes clone.
