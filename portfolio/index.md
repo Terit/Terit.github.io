@@ -17,7 +17,7 @@ image:
 
 A memory match game using *Instagram* hashtags.
 Built using a Sinatra framework and Javascript front end.
-<a href="http://github.com/Terit/photographic-memory" target=_blank>Source code</a>
+<a href="http://github.com/Terit/photographic-memory" target="_blank">Source code</a>
 <br/>
 
 ### [Rotten Mangoes](http://www.github.com/Terit/Rotten-Mangoes)
