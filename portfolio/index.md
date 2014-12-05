@@ -22,6 +22,7 @@ Built using a Sinatra framework and Javascript front end.
 
 ### [Rotten Mangoes](http://www.github.com/Terit/Rotten-Mangoes)
 <a href="http://www.github.com/Terit/Rotten-Mangoes" target="_blank"><img src="/images/rottenmangoes.png"></a>
+
 <br/>
 
 My first Ruby on Rails app, a Rotten Tomatoes clone.
