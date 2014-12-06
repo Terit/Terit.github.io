@@ -21,13 +21,15 @@ Built using a Sinatra framework and Javascript front end.
 <br/>
 
 ### [Rotten Mangoes](http://www.github.com/Terit/Rotten-Mangoes)
-<a href="http://www.github.com/Terit/Rotten-Mangoes" target="_blank"><img src="/images/rottenmangoes.png"></a>
+<a href="https://johnnyrottenmangoes.herokuapp.com/movies" target="_blank"><img src="/images/rottenmangoes.png"></a>
 
 <br/>
 
 My first Ruby on Rails app, a Rotten Tomatoes clone.
 Features include Users, Admins who can ghost other users,
 search bar and advanced search.
+
+<a href='http://github.com/Terit/Rotten-Mangoes' target="_blank">Source Code</a>
 
 <br/>
 
