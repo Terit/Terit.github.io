@@ -35,14 +35,14 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics: 
+    analytics: UA-59473845-1
     verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
   github: terit
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: andy-theriault
   instagram: #username
   lastfm: #username
   tumblr: #username
