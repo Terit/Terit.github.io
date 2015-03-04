@@ -99,6 +99,7 @@ prose:
           element: "multiselect"
           label: "Tags"
           placeholder: "Pick your tags"
+          alterable: true
           options:
             - name: "inspire"
               value: "inspire"
