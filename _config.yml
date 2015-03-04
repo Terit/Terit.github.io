@@ -76,6 +76,24 @@ prose:
         field:
           element: 'text'
           label: 'Image URL'
+      - name: "tag-line"
+        field:
+          element: "text"
+          label: "Tag Line"
+      -name: "category"
+        field:
+          element: "select"
+          label: "Category"
+          placeholder: "Choose a category"
+          options:
+            -name: "Family"
+             value: "family"
+            -name: "Life"
+             value: "life"
+            -name: "Work"
+             value: "work"
+            -name: "Home"
+             value: "home"
     _posts/static:
       - name: "layout"
         field:
