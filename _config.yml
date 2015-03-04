@@ -70,8 +70,8 @@ prose:
           value: "post"
       - name: "title"
         field:
-          element: 'text'
-          label: 'Post Title'          
+          element: "text"
+          label: "title"       
       - name: "image"
         field:
           element: 'text'
