@@ -67,7 +67,7 @@ prose:
       - name: "layout"
         field:
           element: "hidden"
-          value: "blog"
+          value: "post"
       - name: "tags"
         field:
           element: "multiselect"
@@ -78,6 +78,10 @@ prose:
               value: "apples"
             - name: "Bananas"
               value: "bananas"
+        - name: "image"
+          field:
+            element: 'text'
+            label: 'Image URL'
     _posts/static:
       - name: "layout"
         field:
@@ -87,7 +91,7 @@ prose:
         field:
           element: "text"
           label: "Permalink"
-          value: ""  
+          value: ""
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
