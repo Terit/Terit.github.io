@@ -94,6 +94,20 @@ prose:
               value: "work"
             - name: "Home"
               value: "home"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tags"
+          placeholder: "Pick your tags"
+          options:
+            - name: "inspire"
+              value: "inspire"
+            - name: "learn"
+              value: "learn"
+            - name: "laugh"
+              value: "laugh"
+            - name: "big ideas"
+              value: "big ideas"
     _posts/static:
       - name: "layout"
         field:
