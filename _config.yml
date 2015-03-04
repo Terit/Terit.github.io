@@ -68,20 +68,10 @@ prose:
         field:
           element: "hidden"
           value: "post"
-      - name: "tags"
+      - name: "image"
         field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-        - name: "image"
-          field:
-            element: 'text'
-            label: 'Image URL'
+          element: 'text'
+          label: 'Image URL'
     _posts/static:
       - name: "layout"
         field:
