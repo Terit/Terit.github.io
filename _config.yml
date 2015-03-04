@@ -80,20 +80,20 @@ prose:
         field:
           element: "text"
           label: "Tag Line"
-      -name: "category"
+      - name: "category"
         field:
           element: "select"
           label: "Category"
           placeholder: "Choose a category"
           options:
-            -name: "Family"
-             value: "family"
-            -name: "Life"
-             value: "life"
-            -name: "Work"
-             value: "work"
-            -name: "Home"
-             value: "home"
+            - name: "Family"
+              value: "family"
+            - name: "Life"
+              value: "life"
+            - name: "Work"
+              value: "work"
+            - name: "Home"
+              value: "home"
     _posts/static:
       - name: "layout"
         field:
