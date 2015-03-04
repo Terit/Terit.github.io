@@ -55,7 +55,7 @@ owner:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://blog.mybesthelper.com'
+  siteurl: 'https://blorg.herokuapp.com'
   media: 'images'
   ignore:
     - index.md
@@ -68,6 +68,10 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+          element: 'text'
+          label: 'Post Title'          
       - name: "image"
         field:
           element: 'text'
