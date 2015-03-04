@@ -76,7 +76,7 @@ prose:
         field:
           element: 'text'
           label: 'Image URL'
-      - name: "tag-line"
+      - name: "tag_line"
         field:
           element: "text"
           label: "Tag Line"
