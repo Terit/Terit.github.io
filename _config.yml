@@ -1,0 +1,128 @@
+# Site wide configuration
+
+title:            Andy Theriault
+locale:           en_US
+url:              http://terit.github.io
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Andy Theriault
+  avatar: terit.png
+  bio: "I'm a full stack Web Dev who loves learning."
+  email: artheriault@gmail.com
+  disqus-shortname: 
+  twitter: #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics: UA-59473845-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: terit
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: andytheriault
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'https://blorg.herokuapp.com'
+  media: 'images'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          element: "hidden"
+          value: true    
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"       
+      - name: "image"
+        field:
+          element: 'text'
+          label: 'Image URL'
+      - name: "tag_line"
+        field:
+          element: "text"
+          label: "Tag Line"
+      - name: "category"
+        field:
+          element: "select"
+          label: "Category"
+          placeholder: "Choose a category"
+          options:
+            - name: "Family"
+              value: "family"
+            - name: "Life"
+              value: "life"
+            - name: "Work"
+              value: "work"
+            - name: "Home"
+              value: "home"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tags"
+          placeholder: "Pick your tags"
+          alterable: true
+          options:
+            - name: "inspire"
+              value: "inspire"
+            - name: "learn"
+              value: "learn"
+            - name: "laugh"
+              value: "laugh"
+            - name: "big ideas"
+              value: "big ideas"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

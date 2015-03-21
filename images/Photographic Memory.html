@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:3000/cats -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:3000/stylesheets/style.css">
+  <link rel="stylesheet" href="http://localhost:3000/stylesheets/navstyle.css">
+  <link rel="stylesheet" href="http://localhost:3000/stylesheets/panelstyle.css">
+  <link rel="stylesheet" href="http://localhost:3000/stylesheets/application.css">
+
+  <link rel="shortcut icon" href="http://localhost:3000/images/instagram_favicon.ico">
+
+  <script>window.gon = {};gon.links=["http://scontent-a.cdninstagram.com/hphotos-xpa1/t51.2885-15/10808834_316388858567227_1662220022_s.jpg","http://scontent-b.cdninstagram.com/hphotos-xfa1/t51.2885-15/10832276_313585498843239_1276382856_s.jpg","http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10838778_885913911427584_890762977_s.jpg","http://scontent-a.cdninstagram.com/hphotos-xpa1/t51.2885-15/10809820_752477648121225_1646581643_s.jpg","http://scontent-b.cdninstagram.com/hphotos-xfa1/t51.2885-15/10831751_633696256756134_361482745_s.jpg","http://scontent-a.cdninstagram.com/hphotos-xaf1/t51.2885-15/10818000_597131617084191_905404366_s.jpg","http://scontent-b.cdninstagram.com/hphotos-xap1/t51.2885-15/10809931_792175584162455_235818020_s.jpg","http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10853110_493307860810518_537201681_s.jpg"];</script><style type="text/css"></style>
+
+  <script src="./Photographic Memory_files/jquery.min.js"></script>
+  <script src="./Photographic Memory_files/bootstrap.min.js"></script>
+  <script src="./Photographic Memory_files/script.js"></script>
+  <script src="./Photographic Memory_files/jquery.flip.js"></script>
+
+  <title>Photographic Memory</title>
+</head>
+<body>
+  <div class="navbar navbar-default">
+    <div class="navbar-header left">
+      <a class="navbar-brand" href="http://localhost:3000/">Photographic Memory</a>
+    </div>
+    <div class="nav navbar-nav center">
+      <ul class="nav navbar-nav">
+        <li class="li-spacer">
+          <a class="a-spacer" id="tag">#cats</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav navbar-nav right">
+      <form class="navbar-form navbar-right" method="get" action="http://localhost:3000/search">
+        <input id="search_bar" type="text" class="form-control col-lg-8" placeholder="#Hashtag Search" name="search">
+      </form>
+    </div>
+  </div>
+  <div class="progress hidden">
+  <div id="css-progress-bar" class="progress-bar progress-bar-success"></div>
+  <div id="css-remaining-bar" class="progress-bar progress-bar-warning"></div>
+</div>
+
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="overlay"></div>
+    <div class="panel-body">
+      <div class="buttons">
+        <button id="play_button" class="btn btn-info start">Play Now</button>
+        <form id="scoreboard" class="hidden" action="http://localhost:3000/leaderboard" method="post">
+          <input name="name" type="text" class="form-control" maxlength="3" id="inputSuccess" placeholder="Enter initials for high score">
+          <input name="score" type="hidden" id="time">
+          <input name="tag" type="hidden" value="cats">
+        </form>
+       </div>
+    </div>
+    <div id="cards"></div>
+  </div>
+</div>
+<!-- <div id='card-template' style='display: hidden;' class='flip col-xs-3'>
+  <div class='card'>
+    <div class='front-wrap'>
+      <div class="front"></div>
+    </div>
+    <div class='back-wrap'>
+      <div class="back"></div>
+    </div>
+  </div>
+</div> -->
+
+<div id="card-template" class="flip col-xs-3">
+  <div class="flipper">
+    <div class="front"></div>
+    <div class="back"></div>
+  </div>
+</div>
+
+
+
+</body></html>
