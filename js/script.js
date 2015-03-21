@@ -1,13 +1,4 @@
-$(document).ready(function() {
-//   $('#fullpage').fullpage({
-//     anchors: ['firstPage', 'secondPage', 'thirdPage'],
-//     menu: '#header',
-// //   });
-// //   $('#header').find('#portfolio').click(function() {
-// //     $.fn.fullpage.moveTo(2, 0);
-    
-// //   });
-// // });
+$(function() {
 
   $('#fullpage').fullpage({
     css: true,
@@ -15,38 +6,30 @@ $(document).ready(function() {
   
     onLeave: function(anchorLink, index){
       //using index
-      if(index == '2' || '3'){
-        $('header').addClass('topped');
-        $('.section').addClass('topped');
-      }
       if(index == '1'){
         $('header').removeClass('topped');
+        $('.fa-arrow-up').replaceWith('<i class="fa fa-home"></i>');
+        $('#home').addClass('underline')
+      } else {
+        $('header').addClass('topped');
+        $('.section').addClass('topped');
+        $('.fa-home').replaceWith('<i class="fa fa-arrow-up"></i>');
+        $('#home').removeClass('underline')
+      }
+      if(index == '3'){
+        $('#portfolio').addClass('underline');
+        $('.fa-folder').replaceWith('<i class="fa fa-folder-open"></i>');
+      } else {
+        $('#portfolio').removeClass('underline');
+        $('.fa-folder-open').replaceWith('<i class="fa fa-folder"></i>');
       }
     }
   });
-});
 
-// $(function(){
-//  var shrinkHeader = 800;
-//   $(window).scroll(function() {
-//     var scroll = getCurrentScroll();
-//       if ( scroll >= shrinkHeader ) {
-//            $('#header').addClass('topped');
-//         }
-//         else {
-//             $('#header').removeClass('topped');
-//         }
-//   });
-//   $(window).scroll(function() {
-//     var scroll = getCurrentScroll();
-//       if ( scroll >= 693 ) {
-//            $('body').addClass('blue');
-//         }
-//         else {
-//             $('body').removeClass('blue');
-//         }
-//   });
-// function getCurrentScroll() {
-//     return window.pageYOffset || document.documentElement.scrollTop;
-//     }
-// });
+  $('#portrait').on('mouseover', function() {
+    $('#about').removeClass('hide');
+  }).on('mouseleave', function() {
+    $('#about').addClass('hide');
+  });
+
+});

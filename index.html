@@ -3,41 +3,85 @@
   <head>
   	<link rel="stylesheet" href="css/style.css">
   	<link rel="shortcut icon" href="images/terit.png">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery.fullpage.css">
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  	<script src="js/script.js"></script>
     <script src="js/jquery.easings.min.js"></script> 
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  	<script src="js/script.js"></script>
     <title>Andy Theriault</title>
   </head>
   <body>
   	<header>
-      <li><i class= "fa fa-navicon"></i>Menu</li>
-      <li id="portfolio"><i class= "fa fa-circle-o"></i>Portfolio</li>
+      <li id='home' class='underline'><a href='#firstPage'><i class= "fa fa-home"></i>Home</a></li>
+      <li id="portfolio"><a href='#thirdPage'><i class= "fa fa-folder"></i>Portfolio</a></li>
   		<li>Andy</li>
-      <li><img src="images/terit.png"></img></li>
+      <li><img id='portrait' src="images/terit.png"><small id='about' class='hide'>I'm a full stack Web Dev who loves learning.</small></img></li>
   		<li>Theriault</li>
-  		<li><a href="https://www.github.com/terit"><i class="fa fa-github"></i>Github</li></a>
-      <li><a href="https://www.twitter.com/Terit2k"><i class= "fa fa-twitter"></i>Twitter</a></li>
+  		<li><a href="https://www.github.com/terit" target='_blank'><i class="fa fa-github"></i>Github</li></a>
+      <li><a href="https://www.linkedin.com/in/andytheriault" target='_blank'><i class= "fa fa-linkedin-square"></i>LinkedIn</a></li>
   	</header>
+
     <div id="fullpage">
-      <div class="section" data-menuanchor="firstPage"></div>
+      <div class="section" data-menuanchor="firstPage">
+        <div class="contents">
+        </div>
+      </div>
       <div class="section" data-menuanchor="secondPage">
-        <div id="contents">
+        <div class="contents">
           <div>
-            <h1>Hello World</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+            <h3>Welcome</h3>
+            <p>Welcome to my site, it's not very big but have a look around you might see something you like. If you do feel free to contact me through <a href="https://www.linkedin.com/in/andytheriault" target='_blank'>LinkedIn</a> or email me directly <a href='mailto:artheriault@gmail.com' target='_blank'>here</a>. My career as a web developer is just getting started so check back regularly as I update my profile.</p>
+            <p>Currently I'm working for <a href='https://mybesthelper.com/' target='_blank'>myBestHelper</a>, a company which helps families find babysitters, nannies or any sort of helper they need.</p>
+            <p>I'm not much of a blogger, so don't expect much from this page.</p>
           </div> 
         </div>
       </div>
-      <div class="section" data-menuanchor="thirdPage"></div>
+      <div class="section" data-menuanchor="thirdPage">
+        <div class="slide">
+          <div class="contents">
+            <div>
+              <h3>Full Roster<small class='text-right'><a href='http://github.com/terit'>Private Repo</a></small></h3>
+              <img src='images/portfolio/fullroster.png'>
+              <p>
+              An eloquent solution to running a multi-team, multi-sport event for anyone. Built with Ruby on Rails with lots of dynamic content being loaded via Javascript.
+              </p>
+              <p><a href='http://www.fullroster.co'>See it live</a></p>
+            </div>   
+          </div>      
+        </div>
+        <div class="slide">
+          <div class="contents">
+            <div>
+              <h3>Photographic Memory<small class='text-right'><a href='https://github.com/Terit/photographic-memory'>Source</a></small></h3>
+              <img src='images/portfolio/photomemory.png'>
+              <p>
+              A memory match game using Instagram hashtags. Built using a Sinatra framework and Javascript front end.
+              </p>
+              <p><a href='https://johnnyrottenmangoes.herokuapp.com'>See it live</a></p>
+            </div>  
+          </div>  
+        </div>
+        <div class="slide">
+          <div class="contents">
+            <div>
+              <h3>Rotten Mangoes<small class='text-right'><a href='http://github.com/terit/rotten-mangoes'>Source</a></small></h3>
+              <img src='images/portfolio/rottenmangoes.png'>
+              <p>
+              My first Ruby on Rails app, a Rotten Tomatoes clone. Features include Users, Admins who can ghost other users, search bar and advanced search.
+              </p>
+              <p><a href='https://johnnyrottenmangoes.herokuapp.com'>See it live</a></p>
+            </div>
+          </div>  
+        </div>                  
+       </div> 
+      </div>
     </div>
   </body>
     <footer>
       <ul>
-        <li><a href="https://www.github.com/terit"><i class="fa fa-github"></i>Github</li></a>
-        <li><a href="https://www.twitter.com/Terit2k"><i class= "fa fa-twitter"></i>Twitter</a></li>
+        <li><a href="https://www.github.com/terit" target='_blank'><i class="fa fa-github"></i>Github</li></a>
+        <li><a href="https://www.linkedin.com/in/andytheriault" target='_blank'><i class= "fa fa-linkedin-square"></i>LinkedIn</a></li>
       </ul>
     </footer>
 </html>
