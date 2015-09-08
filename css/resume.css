@@ -1,0 +1,87 @@
+body {
+  background-color: #222;
+  font-family: 'Anonymous Pro';
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  cursor: text;
+}
+
+.output {
+  display: none;
+}
+
+section {
+  padding: 0 0 0 2%;
+  height: 100%;
+  float: left;
+}
+
+hr {
+  margin-right: 20px;
+}
+
+#left {
+  width: 25%;
+  min-width: 25%;
+}
+
+#right {
+  border-left: 1px solid white;
+  width: 70%;
+  min-height: 980px;
+}
+
+a, a:visited {
+  color: cornflowerblue;
+}
+
+#name {
+  font-size: 20px;
+}
+
+.cli .green {
+  color: green;
+}
+
+.cli .red {
+  color: red;
+}
+
+.vim > span {
+  color: red;
+}
+
+.cli > span.blink {
+  color: white;
+}
+
+p {
+  margin: 0;
+  color: white;
+}
+
+td {
+  padding: 0 1em 0 0;
+}
+
+.tab {
+  padding-left: 2em;
+}
+
+.double-tab {
+  padding-left: 4em;
+}
+
+.blink {
+  animation-name: blinker;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinker {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
