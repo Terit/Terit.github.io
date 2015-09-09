@@ -48,10 +48,10 @@ header li {
 	padding: 0.5em;
 	font-size: 1rem;
 }
-header li:nth-child(3), li:nth-child(5) {
+header li:nth-child(4), li:nth-child(6) {
 	font-size: 2rem;
 }
-header li:nth-child(4) {
+header li:nth-child(5) {
 	margin-right: -70px;
 	margin-left: -70px
 }
