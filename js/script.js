@@ -2,8 +2,8 @@ $(function() {
 
   $('#fullpage').fullpage({
     css: true,
-    anchors: ['firstPage', 'secondPage', 'thirdPage'],
-  
+    anchors: ['home', 'blog', 'portfolio'],
+
     onLeave: function(anchorLink, index){
       //using index
       if(index == '1'){
@@ -32,4 +32,12 @@ $(function() {
     $('#about').addClass('hide');
   });
 
+  $('.arrow-down').on('click', function() {
+    var url = window.location.hash;
+    if (url === '#home') {
+      window.location.hash = '#blog'
+    } else {
+      window.location.hash = '#portfolio'
+    }
+  })
 });

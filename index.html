@@ -2,42 +2,85 @@
 <html>
   <head>
   	<link rel="stylesheet" href="css/style.css">
-  	<link rel="shortcut icon" href="images/terit.png">
+  	<link rel="shortcut icon" href="images/terit_favicon.png">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery.fullpage.css">
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/jquery.easings.min.js"></script> 
+    <script src="js/jquery.easings.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
   	<script src="js/script.js"></script>
     <title>Andy Theriault</title>
   </head>
   <body>
   	<header>
-      <li id='home' class='underline'><a href='#firstPage'><i class= "fa fa-home"></i>Home</a></li>
-      <li id="portfolio"><a href='#thirdPage'><i class= "fa fa-folder"></i>Portfolio</a></li>
+      <li id='home' class='underline'><a href='#home'><i class= "fa fa-home"></i>Home</a></li>
+      <li id="portfolio"><a href='#portfolio'><i class= "fa fa-folder"></i>Portfolio</a></li>
       <li id="resume"><a href="/resume"><i class="fa fa-file-text"></i>Resume</a></li>
   		<li>Andy</li>
-      <li><img id='portrait' src="images/terit.png"><small id='about' class='hide'>I'm a full stack Web Dev who loves learning.</small></img></li>
+      <li><img id='portrait' src="images/terit.jpg"><small id='about' class='hide'>Full stack Web Dev looking for <i class="fa fa-bug"></i> to squash.</small></img></li>
   		<li>Theriault</li>
-  		<li><a href="https://www.github.com/terit" target='_blank'><i class="fa fa-github"></i>Github</li></a>
+  		<li><a href="https://www.github.com/terit" target='_blank'><i class="fa fa-github"></i>Github</a></li>
       <li><a href="https://www.linkedin.com/in/andytheriault" target='_blank'><i class= "fa fa-linkedin-square"></i>LinkedIn</a></li>
+      <li><a href="mailto:andy@terit.tech" target='_blank'><i class='fa fa-envelope'></i>Contact</a></li>
   	</header>
 
     <div id="fullpage">
-      <div class="section" data-menuanchor="firstPage">
+      <div class="section" data-menuanchor="home">
         <div class="contents">
+          <!-- Empty Homepage by design -->
+        </div>
+        <div class='arrow-down'>
+          <i class='fa fa-caret-down'></i>
         </div>
       </div>
-      <div class="section" data-menuanchor="secondPage">
-        <div class="contents">
-          <div>
-            <h3>Welcome</h3>
-            <p>Welcome to my site, have a look around you might see something you like. If you do feel free to contact me through <a href="https://www.linkedin.com/in/andytheriault" target='_blank'>LinkedIn</a> or email me directly <a href='mailto:artheriault@gmail.com' target='_blank'>here</a>. My career as a web developer is just getting started so check back regularly as I update my profile.</p>
-            <p>Currently I'm working for <a href='https://mybesthelper.com/' target='_blank'>myBestHelper</a>, a company which helps families find babysitters, nannies or any sort of helper they need.</p>
-          </div> 
+
+      <div class="section" data-menuanchor="blog">
+        <div class="slide">
+          <div class="contents">
+            <div>
+              <h3>April 2016</h3>
+              <p>Recently I've been playing with <a href='https://facebook.github.io/react/'>ReactJS</a>. I started my journey by finding a few tutorials to pick up the basics. Doing so I realised my Javascript skills were a little rusty, working mostly in Ruby at <a href='https://mybesthelper.com/' target='_blank'>myBestHelper</a> and most of our Javascript is written in <a href='https://jquery.com/'>jQuery</a>. Familiarizing myself with vanilla JS allowed me to better follow along with the concepts and strength of ReactJS.</p>
+
+              <p>Once the tutorials had done their job, I started to think about ways I could test my new skills. That lead me to my favourite project I did at Lighthouse Labs, <a href='https://photographic-memory.herokuapp.com' target='_blank'>Photographic Memory</a>! I always liked working on that project because the game was so fun to play which made it so motivating to finish. It was also the project where I wrote the most javascript.</p>
+
+              <p>Reflecting on the project, I think I made a great choice. With so much state changing throughout the game I got a much better understanding of React component state, props and the React API. It also allowed me the chance to break my page into smaller and smaller components as I went along. I also got a chance to try my hand at ES6, Babel, and Gulp more things I wasn't too familar with before I started this.</p>
+
+              <p>Check out the finished version <a href='https://photographic.herokuapp.com' target='_blank'>here</a> or the repository <a href='https://github.com/terit/react-photographic-memory' target='_blank'>here</a>.
+
+              <p>Up next I'm going to rewrite another Lighthouse Labs project, Rotten Mangoes. I think it's a good chance to try a more robust project with user accounts, multiple database models and a more complex application. It will also give me a chance to write a Node.js API server with the possibility of a universal/isomorphic refactor in the future.</p>
+
+              <p>Stay tuned for more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="contents">
+            <div>
+              <h3>Welcome 2015</h3>
+              <p>Welcome to my site, have a look around you might see something you like. If you do feel free to contact me through <a href="https://www.linkedin.com/in/andytheriault" target='_blank'>LinkedIn</a> or email me directly <a href='mailto:andy@terit.tech' target='_blank'>here</a>. My career as a web developer is just getting started so check back regularly as I update my profile.</p>
+              <p>Currently I'm working for <a href='https://mybesthelper.com/' target='_blank'>myBestHelper</a>, a company which helps families find babysitters, nannies or any sort of helper they need.</p>
+            </div>
+          </div>
+        </div>
+        <div class='arrow-down'>
+          <i class='fa fa-caret-down'></i>
         </div>
       </div>
-      <div class="section" data-menuanchor="thirdPage">
+
+
+      <div class="section" data-menuanchor="portfolio">
+        <div class="slide">
+          <div class="contents">
+            <div>
+              <h3>Photographic Memory 2.0<small class='text-right'><a href='https://github.com/terit/react-photographic-memory' target='_blank'>Source</a></small></h3>
+              <img src='images/portfolio/photographic.png'>
+              <p>
+              A memory match game using Instagram hashtags. Built using a Sinatra framework for the API and an all new ReactJS front end.
+              </p>
+              <p><a href='https://photographic.herokuapp.com' target='_blank'>See it live</a></p>
+            </div>
+          </div>
+        </div>
         <div class="slide">
           <div class="contents">
             <div>
@@ -47,8 +90,8 @@
               An eloquent solution to running a multi-team, multi-sport event for anyone. Built with Ruby on Rails with lots of dynamic content being loaded via Javascript.
               </p>
               <p><a href='#'>No longer maintained.</a></p>
-            </div>   
-          </div>      
+            </div>
+          </div>
         </div>
         <div class="slide">
           <div class="contents">
@@ -59,8 +102,8 @@
               A memory match game using Instagram hashtags. Built using a Sinatra framework and Javascript front end.
               </p>
               <p><a href='https://photographic-memory.herokuapp.com' target='_blank'>See it live</a></p>
-            </div>  
-          </div>  
+            </div>
+          </div>
         </div>
         <div class="slide">
           <div class="contents">
@@ -72,9 +115,9 @@
               </p>
               <p><a href='https://johnnyrottenmangoes.herokuapp.com' target='_blank'>See it live</a></p>
             </div>
-          </div>  
-        </div>                  
-       </div> 
+          </div>
+        </div>
+       </div>
       </div>
     </div>
   </body>

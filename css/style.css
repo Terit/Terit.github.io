@@ -19,7 +19,7 @@ body {
 .section:nth-child(3) {
 	background: url(../images/material_design.png);
 	background-position: 0 5%;
-	background-size: 100% 100%;	
+	background-size: 100% 100%;
 }
 header {
 	position: fixed;
@@ -85,14 +85,14 @@ header a:hover {
   padding: 0.5em;
   padding-top: 1.1em;
   font-size: 1rem;
-  z-index: -1;	
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
+  z-index: -1;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   text-align: center;
 }
 .topped #about {
 	padding-top: 3em;
 }
-.contents div {
+.contents div:first-child {
 	background-color: white;
 	color: #0099FF;
 	width: 50%;
@@ -133,6 +133,15 @@ small a:hover, p a:hover {
 	width: 100%;
 }
 
+.arrow-down {
+  background: none;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  bottom: 47px;
+  left: 47%;
+}
+
 footer a {
 	text-decoration: none;
 	color: white;
@@ -154,7 +163,7 @@ footer {
 	height: 40px;
 }
 footer ul {
-	width: 250px;
+	width: 195px;
 	margin: 0 auto;
 	color: white;
 	padding: 0;
