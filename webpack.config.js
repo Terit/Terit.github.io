@@ -24,9 +24,13 @@ module.exports = {
         },
       },
       {
+        test: /vendor\/.+\.(jsx|js)$/,
+        loader: 'imports?jQuery=jquery,$=jquery,this=>window',
+      },
+      {
         test: /\.css$/,
-        include: path.join(__dirname, 'src'),
-        loader: "style-loader!css-loader",
+        includes: [path.join(__dirname, 'src'), path.join(__dirname, 'src', 'css')],
+        loader: 'style-loader!css-loader',
       },
       {
         test: /\.(jpg|png)$/,
