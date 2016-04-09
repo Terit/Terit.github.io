@@ -8,7 +8,7 @@ $(function () {
 
     onLeave: function (anchorLink, index) {
       // using index
-      if (index === '1') {
+      if (index === 1) {
         $('header').removeClass('topped');
         $('.fa-arrow-up').replaceWith('<i class="fa fa-home"></i>');
         $('#home').addClass('underline');
@@ -18,7 +18,7 @@ $(function () {
         $('.fa-home').replaceWith('<i class="fa fa-arrow-up"></i>');
         $('#home').removeClass('underline');
       }
-      if (index === '3') {
+      if (index === 3) {
         $('#portfolio').addClass('underline');
         $('.fa-folder').replaceWith('<i class="fa fa-folder-open"></i>');
       } else {

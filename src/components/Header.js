@@ -5,12 +5,12 @@ export default function Header() {
   return (
     <header>
       <li id="home" className="underline">
-        <Link to="/"><i className= "fa fa-home"></i>Home</Link>
+        <a href="/#home"><i className= "fa fa-home"></i>Home</a>
       </li>
       <li id="portfolio">
-        <Link to="/portfolio"><i className= "fa fa-folder"></i>Portfolio</Link>
+        <a href="/#portfolio"><i className= "fa fa-folder"></i>Portfolio</a>
       </li>
-      <li id="resume"><Link to="/resume"><i className="fa fa-file-text"></i>Resume</Link></li>
+      <li id="resume"><Link to="resume"><i className="fa fa-file-text"></i>Resume</Link></li>
       <li>Andy</li>
       <li>
         <img id="portrait" src="images/terit.jpg" />
