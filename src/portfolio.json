@@ -8,10 +8,10 @@
   },
   {
     "name": "Full Roster",
-    "repoLink": "http://github.com/terit",
+    "repoLink": "",
     "imagePath": "images/portfolio/fullroster.png",
     "description": "An eloquent solution to running a multi-team, multi-sport event for anyone. Built with Ruby on Rails with lots of dynamic content being loaded via Javascript.",
-    "link":"#"
+    "link":""
   },
   {
     "name": "Photographic Memory",

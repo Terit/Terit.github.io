@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function PortfolioItem({ name, repoLink, imagePath, description, link }) {
+  const demoLink = link ? <a href={link} target="_blank">See it live</a> : 'No longer maintained';
+  const repoLinkText = repoLink ? 'Source' : 'Private Repo';
   return (
     <div className="slide">
       <div className="contents">
@@ -8,14 +10,14 @@ export default function PortfolioItem({ name, repoLink, imagePath, description, 
           <h3>
             {name}
             <small className="text-right">
-              <a href={repoLink} target="_blank">Source</a>
+              <a href={repoLink} target="_blank">{repoLinkText}</a>
             </small>
           </h3>
 
           <img src={imagePath} />
 
           <p>{description}</p>
-          <p><a href={link} target="_blank">See it live</a></p>
+          <p>{demoLink}</p>
         </div>
       </div>
     </div>
