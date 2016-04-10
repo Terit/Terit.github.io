@@ -5,7 +5,7 @@ export default function Job({ name, title, dates, description }) {
     <div>
       <p>{name}</p>
       <p className="tab">{title} - {dates}</p>
-      {description.map(line => <p className="double-tab">{line}</p>)}
+      {description.map((line, i) => <p className="double-tab" key={i}>{line}</p>)}
     </div>
   );
 }

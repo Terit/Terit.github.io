@@ -50,10 +50,10 @@ export default class RightSection extends React.Component {
     );
   }
 
-  renderSkills(row) {
+  renderSkills(row, key) {
     return (
-      <tr>
-        {row.map(skill => <td>{skill}</td>)}
+      <tr key={key}>
+        {row.map((skill, i) => <td key={i}>{skill}</td>)}
       </tr>
     );
   }
@@ -85,7 +85,7 @@ export default class RightSection extends React.Component {
         <Output id="lsOutput">
           <table>
             <tbody>
-              {resume.skills.map((i) => this.renderSkills(i))}
+              {resume.skills.map((line, key) => this.renderSkills(line, key))}
             </tbody>
           </table>
           <Prompt id="education" dir="/skills" />
