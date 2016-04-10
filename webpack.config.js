@@ -20,7 +20,7 @@ module.exports = {
         exclude: /(node_modules|original)/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015'],
+          presets: ['es2015', 'react', 'react-hmre'],
         },
       },
       {
@@ -72,6 +72,11 @@ module.exports = {
           'url?limit=8192',
           'img',
         ],
+      },
+      {
+        test: /\.json$/,
+        include: /src/,
+        loader: 'json-loader',
       },
     ],
   },

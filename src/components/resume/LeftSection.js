@@ -1,22 +1,17 @@
 import React from 'react';
 
+import Prompt from './Prompt';
+import Output from './Output';
+
 export default function LeftSection() {
   return (
     <section id="left">
-      <p className="cli">
-        <span className="red">~/resume</span>
-        <span className="green"> $ </span>
-        <span id="whoami"></span>
-      </p>
-      <div id="whoamiOutput" className="output">
+      <Prompt id="whoami" />
+      <Output id="whoamiOutput">
         <p id="name">Andy Theriault</p>
-        <p className="cli">
-          <span className="red">~/resume</span>
-          <span className="green"> $ </span>
-          <span id="contact"></span>
-        </p>
-      </div>
-      <div id="contactOutput" className="output">
+        <Prompt id="contact" />
+      </Output>
+      <Output id="contactOutput">
         <p>role: Web developer</p>
         <p>email: <a className="play-print" href="mailto:artheriault@gmail.com">artheriault@gmail.com</a></p>
         <p>phone: 778-967-1675</p>
@@ -29,10 +24,10 @@ export default function LeftSection() {
         <p className="cli play-print">
           <span className="red">~/resume</span>
           <span className="green"> $ </span>
-          <span className="print">Click here to Print</span>
-          <span className="blink">&#9612;</span>
+          <span className="print" onClick={window.print}>Click here to Print</span>
+          <span className="blink"> &#9612;</span>
         </p>
-      </div>
+      </Output>
     </section>
   );
 }

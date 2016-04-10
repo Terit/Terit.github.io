@@ -1,0 +1,90 @@
+{
+  "summary": "I'm a Full Stack Web Developer who is passionate about creating functional well designed software. I love working with new languages and technologies. The Odin Project and an intensive bootcamp at Lighthouse Labs have fuelled my hunger for learning. I aim to build upon my skills by immersing myself in new projects and discussing them with others.",
+  "skills": [
+    ["LANGUAGES", "Ruby", "Javascript", "Java", "HTML5", "CSS3", "Markdown", "SQL", "Elixir"],
+    ["FRAMEWORKS", "Rails", "ReactJS", "Sinatra", "Meteor", "Ember", "Phoenix", "Foundation", "Bootstrap"],
+    ["MISCELLANEOUS", "Git", "Github", "RSpec", "Heroku", "AWS", "Vagrant", "Redis", "Resque", "Postgresql"]
+  ],
+  "jobs": [
+    {
+      "name":" myBestHelper.com",
+      "title": "Ruby on Rails Developer",
+      "dates": "Feb 2015..Present",
+      "description": [
+        "Maintain and develop myBestHelper.com web app including server maintenance and devops.",
+        "Plan and execute weekly development sprints.",
+        "Developed features: Multiple user profiles, Job/Helper matching algorithm, improve admin panel functionality,",
+        "improve page speed using caching and CDNs."
+      ]
+    },
+    {
+      "name": "London Drugs",
+      "title": "Customer Service Specialist",
+      "dates": "Jul 2012..Oct 2014",
+      "description": [
+        "Team player who went beyond the role of ones title",
+        "Sales orientated position",
+        "Cash handling"
+      ]
+    },
+    {
+      "name": "Capstone Imaging Supplies",
+      "title": "Logistics Managment",
+      "dates": "Aug 2007..Dec 2011",
+      "description": [
+        "Handled all logistics tasks, including shipping, receiving, and order picking",
+        "Maintained company network and computer systems",
+        "Responsible for shipping contract negotiations"
+      ]
+    }
+  ],
+  "schools": [
+    {
+      "name": "Lighthouse Labs",
+      "description": "Immersive Web Development Bootcamp",
+      "dates": "2014"
+    },
+    {
+      "name": "Camosun College",
+      "description": "Computer Science",
+      "dates": "2012-2013"
+    },
+    {
+      "name": "Douglas College",
+      "description": "Computer Science",
+      "dates": "2012"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Photographic Memory",
+      "description": "A timed memory match game with images generated from Instagram hashtags. Simple but addictive.",
+      "link": "https://photographic-memory.herokuapp.com",
+      "repoLink": "https://github.com/terit/photographic-memory"
+    },
+    {
+      "name": "Photographic Memory v2.0",
+      "description": "My first ReactJS project not involving a tutorial. I rebuilt the game almost completely from the ground, only repurposing the old Sinatra server to be an API.",
+      "link": "https://photographic.herokuapp.com",
+      "repoLink": "https://github.com/terit/react-photographic-memory"
+    },
+    {
+      "name": "Rotten Mangoes",
+      "description": "A Rotten Tomatoes clone built with Ruby on Rails and theMovieDB API.",
+      "link": "https://johnnyrottenmangoes.herokuapp.com",
+      "repoLink": "https://github.com/terit/rotten-mangoes"
+    },
+    {
+      "name": "London Drugs Schedule Widget",
+      "description": "A Java based Selenium Webdriver program to login in to the London Drugs employee portal and capture my bi-weekly schedule. The exported data was used for a custom Lua Rainmeter desktop widget.",
+      "link": "",
+      "repoLink": "https://github.com/Terit/LD-Schedule-Getter"
+    },
+    {
+      "name": "Full Roster-Event Management",
+      "description": "An eloquent solution to running multi-team, multi-sport events. Built with Ruby on Rails with heavy use of Javascript to dynamically load content.",
+      "link": "",
+      "repoLink": ""
+    }
+  ]
+}

@@ -3,8 +3,8 @@ import '../css/resume.css';
 import { type } from '../utils/resume.js';
 
 import React from 'react';
-import LeftSection from './LeftSection';
-import RightSection from './RightSection';
+import LeftSection from './resume/LeftSection';
+import RightSection from './resume/RightSection';
 
 class CV extends React.Component {
   componentDidMount() {
