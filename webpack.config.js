@@ -2,15 +2,14 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  entry: [
-    'babel-polyfill',
-    './src/main',
-    'webpack-dev-server/client?http://localhost:8080',
-  ],
+  entry: {
+    index: ['babel-polyfill', './src/index.js', 'webpack-dev-server/client?http://localhost:8080'],
+    resume: ['babel-polyfill', './src/resume.js', 'webpack-dev-server/client?http://localhost:8080'],
+  },
   output: {
+    path: '/',
     publicPath: '/',
     filename: '[name].js',
-    chunkFilename: '[id].js',
   },
   devTool: 'source-map',
   module: {
@@ -51,6 +50,9 @@ module.exports = {
 
   devServer: {
     contentBase: './src',
+    inline: true,
+    hot: true,
+    progress: true,
   },
   debug: true,
 };

@@ -3,7 +3,7 @@
   "skills": [
     ["LANGUAGES", "Ruby", "Javascript", "Java", "HTML5", "CSS3", "Markdown", "SQL", "Elixir"],
     ["FRAMEWORKS", "Rails", "ReactJS", "Sinatra", "Meteor", "Ember", "Phoenix", "Foundation", "Bootstrap"],
-    ["MISCELLANEOUS", "Git", "Github", "RSpec", "Heroku", "AWS", "Vagrant", "Redis", "Resque", "Postgresql"]
+    ["MISCELLANEOUS", "Git", "Github", "RSpec", "Heroku", "AWS", "Vagrant", "Redis", "Postgresql"]
   ],
   "jobs": [
     {

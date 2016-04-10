@@ -4,7 +4,8 @@
   "description": "Andy Theriault's website",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "webpack-dev-server --hot --inline --progress"
   },
   "repository": {
     "type": "git",
