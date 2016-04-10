@@ -8,7 +8,7 @@ module.exports = {
     resume: ['babel-polyfill', './src/resume.js', 'webpack-dev-server/client?http://localhost:8080'],
   },
   output: {
-    path: '/',
+    path: '../',
     publicPath: '/',
     filename: '[name].js',
   },
