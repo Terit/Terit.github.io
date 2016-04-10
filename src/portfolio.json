@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Photographic Memory 2.0",
+    "repoLink": "https://github.com/terit/react-photographic-memory",
+    "imagePath": "images/portfolio/photographic.png",
+    "description": "A memory match game using Instagram hashtags. Built using a Sinatra framework for the API and an all new ReactJS front end.",
+    "link":"https://photographic.herokuapp.com"
+  },
+  {
+    "name": "Full Roster",
+    "repoLink": "http://github.com/terit",
+    "imagePath": "images/portfolio/fullroster.png",
+    "description": "An eloquent solution to running a multi-team, multi-sport event for anyone. Built with Ruby on Rails with lots of dynamic content being loaded via Javascript.",
+    "link":"#"
+  },
+  {
+    "name": "Photographic Memory",
+    "repoLink": "https://github.com/Terit/photographic-memory",
+    "imagePath": "images/portfolio/photomemory.png",
+    "description": "A memory match game using Instagram hashtags. Built using a Sinatra framework and Javascript front end.",
+    "link": "https://photographic-memory.herokuapp.com"
+  },
+  {
+    "name": "Rotten Mangoes",
+    "repoLink": "http://github.com/terit/rotten-mangoes",
+    "imagePath": "images/portfolio/rottenmangoes.png",
+    "description": "My first Ruby on Rails app, a Rotten Tomatoes clone. Features include Users, Admins who can ghost other users, search bar and advanced search.",
+    "link": "https://johnnyrottenmangoes.herokuapp.com"
+  }
+]
