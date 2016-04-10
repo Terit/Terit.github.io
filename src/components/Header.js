@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 export default function Header() {
   return (
@@ -10,7 +9,7 @@ export default function Header() {
       <li id="portfolio">
         <a href="/#portfolio"><i className= "fa fa-folder"></i>Portfolio</a>
       </li>
-      <li id="resume"><Link to="resume"><i className="fa fa-file-text"></i>Resume</Link></li>
+      <li id="resume"><a href="resume.html"><i className="fa fa-file-text"></i>Resume</a></li>
       <li>Andy</li>
       <li>
         <img id="portrait" src="images/terit.jpg" />

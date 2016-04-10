@@ -1,5 +1,3 @@
-import '../css/resume.css';
-
 import { type } from '../utils/resume.js';
 
 import React from 'react';

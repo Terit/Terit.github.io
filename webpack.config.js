@@ -9,7 +9,8 @@ module.exports = {
   ],
   output: {
     publicPath: '/',
-    filename: 'main.js',
+    filename: '[name].js',
+    chunkFilename: '[id].js',
   },
   devTool: 'source-map',
   module: {
@@ -29,49 +30,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: path.join(__dirname, 'src', 'css'),
+        includes: [
+          path.join(__dirname, 'src', 'css'),
+          path.join(__dirname, 'src', 'components', 'resume'),
+        ],
         loader: 'style-loader!css-loader',
       },
       {
         test: /\.(jpg|png)$/,
         loader: 'url?limit=25000',
         include: path.join(__dirname, 'images'),
-      },
-      {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&minetype=application/font-woff',
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file-loader"',
-      },
-      {
-        test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/font-woff',
-      },
-      {
-        test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/font-woff',
-      },
-      {
-        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/octet-stream',
-      },
-      {
-        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file',
-      },
-      {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=image/svg+xml',
-      },
-      {
-        test: /\.(jpe?g|png|gif|woff2?|ttf|eot|svg|css)$/i,
-        include: /node_modules/,
-        loaders: [
-          'url?limit=8192',
-          'img',
-        ],
       },
       {
         test: /\.json$/,

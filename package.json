@@ -42,6 +42,7 @@
     "url-loader": "^0.5.7"
   },
   "dependencies": {
+    "extract-text-webpack-plugin": "^1.0.1",
     "font-awesome": "^4.5.0",
     "jquery": "^2.2.3"
   }

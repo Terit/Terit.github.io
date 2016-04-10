@@ -10,7 +10,7 @@ const routes = (
   <Router history={browserHistory}>
     <Route path="/">
       <IndexRoute component={App} />
-      <Route path="resume" component={CV} />
+      <Route path="resume.html" component={CV} />
     </Route>
   </Router>
 );
