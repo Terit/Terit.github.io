@@ -4,7 +4,7 @@
   "description": "Andy Theriault's website",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "build": "webpack --config webpack.config.prod.js",
     "start": "webpack-dev-server --hot --inline --progress"
   },
   "repository": {
@@ -22,29 +22,26 @@
   "bugs": {
     "url": "https://github.com/Terit/Terit.github.io/issues"
   },
-  "homepage": "https://github.com/Terit/Terit.github.io#readme",
+  "homepage": "https://Terit.github.io",
   "devDependencies": {
-    "autobind-decorator": "^1.3.3",
     "babel-core": "^6.7.5",
     "babel-loader": "^6.2.4",
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.1",
     "css-loader": "^0.23.1",
-    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "history": "^2.0.1",
+    "html-webpack-plugin": "^2.15.0",
     "img-loader": "^1.2.2",
     "imports-loader": "^0.6.5",
     "json-loader": "^0.5.4",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "react-router": "^2.0.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7"
   },
   "dependencies": {
     "extract-text-webpack-plugin": "^1.0.1",
-    "font-awesome": "^4.5.0",
     "jquery": "^2.2.3"
   }
 }
