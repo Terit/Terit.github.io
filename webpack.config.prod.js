@@ -48,5 +48,8 @@ module.exports = {
         warnings: false,
       },
     }),
+    new webpack.DefinePlugin({
+      NODE_ENV: 'production',
+    }),
   ],
 };
