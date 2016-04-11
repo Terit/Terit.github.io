@@ -29,10 +29,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        includes: [
-          path.join(__dirname, 'src', 'css'),
-          path.join(__dirname, 'src', 'components', 'resume'),
-        ],
+        include: path.join(__dirname, 'src', 'css'),
         loader: 'style-loader!css-loader',
       },
       {

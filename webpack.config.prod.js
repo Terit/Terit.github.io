@@ -1,15 +1,14 @@
 var webpack = require('webpack');
 var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: ['babel-polyfill', './src/index.js', 'webpack-dev-server/client?http://localhost:8080'],
-    resume: ['babel-polyfill', './src/resume.js', 'webpack-dev-server/client?http://localhost:8080'],
+    index: ['babel-polyfill', './src/index.js'],
+    resume: ['babel-polyfill', './src/resume.js'],
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/',
+    path: path.join(__dirname),
+    publicPath: path.join('src'),
     filename: '[name].js',
   },
   module: {
@@ -20,7 +19,7 @@ module.exports = {
         exclude: /(node_modules|original)/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'react', 'react-hmre'],
+          presets: ['es2015', 'react'],
         },
       },
       {
@@ -29,16 +28,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        includes: [
-          path.join(__dirname, 'src', 'css'),
-          path.join(__dirname, 'src', 'components', 'resume'),
-        ],
+        include: path.join(__dirname, 'src', 'css'),
         loader: 'style-loader!css-loader',
       },
       {
         test: /\.(jpg|png)$/,
-        loader: 'url?limit=25000',
-        include: path.join(__dirname, 'images'),
+        loader: 'url-loader?limit=25000',
       },
       {
         test: /\.json$/,
@@ -48,6 +43,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+      },
+    }),
   ],
 };
