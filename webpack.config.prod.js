@@ -8,7 +8,7 @@ module.exports = {
     resume: ['babel-polyfill', './src/resume.js', 'webpack-dev-server/client?http://localhost:8080'],
   },
   output: {
-    path: '../',
+    path: path.join(__dirname, 'dist'),
     publicPath: '/',
     filename: '[name].js',
   },
@@ -48,10 +48,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html',
-      inject: true,
-    }),
     new webpack.optimize.UglifyJsPlugin(),
   ],
 };
