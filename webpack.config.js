@@ -6,7 +6,8 @@ module.exports = {
     index: ['babel-polyfill', './src/index.js', 'webpack-dev-server/client?http://localhost:8080'],
     resume: ['babel-polyfill', './src/resume.js', 'webpack-dev-server/client?http://localhost:8080'],
     sw: ['./src/sw.js', 'webpack-dev-server/client?http://localhost:8080'],
-    "register-sw": ['./src/register-sw.js', 'webpack-dev-server/client?http://localhost:8080']
+    "register-sw": ['./src/register-sw.js', 'webpack-dev-server/client?http://localhost:8080'],
+    "sw-toolbox": ['babel-polyfill', './node_modules/sw-toolbox/lib/sw-toolbox.js', 'webpack-dev-server/client?http://localhost:8080']
   },
   output: {
     path: '/',

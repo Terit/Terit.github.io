@@ -6,7 +6,7 @@ module.exports = {
     index: ['babel-polyfill', './src/index.js'],
     resume: ['babel-polyfill', './src/resume.js'],
     sw: ['./src/sw.js'],
-    sw_register: ['./src/register-sw.js']
+    "sw-register": ['./src/register-sw.js']
   },
   output: {
     path: path.join(__dirname),
