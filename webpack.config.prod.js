@@ -5,6 +5,8 @@ module.exports = {
   entry: {
     index: ['babel-polyfill', './src/index.js'],
     resume: ['babel-polyfill', './src/resume.js'],
+    sw: ['./src/sw.js'],
+    sw_register: ['./src/register-sw.js']
   },
   output: {
     path: path.join(__dirname),
@@ -16,7 +18,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: path.join(__dirname, 'src'),
-        exclude: /(node_modules|original)/,
+        exclude: /(node_modules|original|sw)/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react'],

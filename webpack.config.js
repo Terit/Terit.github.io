@@ -5,6 +5,8 @@ module.exports = {
   entry: {
     index: ['babel-polyfill', './src/index.js', 'webpack-dev-server/client?http://localhost:8080'],
     resume: ['babel-polyfill', './src/resume.js', 'webpack-dev-server/client?http://localhost:8080'],
+    sw: ['./src/sw.js', 'webpack-dev-server/client?http://localhost:8080'],
+    "register-sw": ['./src/register-sw.js', 'webpack-dev-server/client?http://localhost:8080']
   },
   output: {
     path: '/',
@@ -17,7 +19,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: path.join(__dirname, 'src'),
-        exclude: /(node_modules|original)/,
+        exclude: /(node_modules|original|sw\.js|register-sw\.js)/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react', 'react-hmre'],
