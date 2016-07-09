@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="src/images/terit_favicon.png">
+  <link rel="shortcut icon" href="/images/terit_favicon.png">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/vendor/skeleton.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andy Theriault</title>
 </head>
 <body>
-  <div id="app"></div>
-  <script src='./index.js'></script>
-  <script src='./sw_register.js'></script>
+  <header class="header u-full-width">
+    <section class="header-portait">
+    </section>
+    <section class="header-title">
+      <h3>Andy Theriault</h1>
+    </section>
+    <section class="header-links">
+      <a href="https://www.linkedin.com/andrewtheriault">LinkedIn</a>
+      <a href="https://www.github.com/terit">Github</a>
+      <a href="/projects">Projects</a>
+      <a href="/resume">Resume</a>
+    </section>
+  </header>
+  <script src='./javascripts/index.js'></script>
+  <script src='./javascripts/register-sw.js'></script>
 </body>
 </html>
