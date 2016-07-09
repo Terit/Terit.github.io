@@ -27,6 +27,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
+  margin: 0 0 30px 0;
   font-size: 20px;
   box-shadow: var(--box-shadow);
 }
@@ -96,4 +97,17 @@ a {
 
 .hide {
 	display: none;
+}
+
+.blog {
+  width: 100%;
+}
+
+.blog-item {
+  background: var(--wht);
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  box-shadow: var(--box-shadow)
 }
