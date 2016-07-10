@@ -16,7 +16,7 @@ const resumeConfig = [
   },
   {
     "element": "#projects",
-    "string": "vim projects.txt ",
+    "string": "vim projects.rb ",
     "delay": 6000
   },
   {
