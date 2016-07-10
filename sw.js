@@ -1,4 +1,4 @@
-importScripts('/javascripts/vendor/sw-toolbox.js')
+importScripts('/javascripts/vendor/sw-toolbox.js');
 
 toolbox.router.default = toolbox.fastest;
 toolbox.precache([
@@ -8,7 +8,7 @@ toolbox.precache([
   '/javascripts/vendor/jquery.min.js',
   '/javascripts/vendor/typed.js',
   '/javascripts/resume.js'
-])
+]);
 
 self.addEventListener('install', function(event) {
   event.waitUntil(skipWaiting());

@@ -5,6 +5,6 @@ if ('serviceWorker' in navigator) {
   }).then(function(swRegistration) {
     reg = swRegistration;
   }).catch(function(err) {
-    console.log('Oops: ', err)
-  })
+    console.log('Oops: ', err);
+  });
 }
