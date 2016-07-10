@@ -5,11 +5,250 @@
   <link rel="stylesheet" href="/css/resume.css">
   <link href='//fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
   <script src='./javascripts/vendor/jquery.min.js'></script>
-  <title>Andy Theraiult - Resume</title>
+  <title>Andy Theriault - Resume</title>
 </head>
 <body>
-  <div id="app">Hello Resume</div>
+  <header>
+  </header>
+  <section id="left">
+    <p class="cli">
+      <span class="red">~/resume</span>
+      <span class="green"> $ </span>
+      <span id="whoami"></span>
+    </p>
+    <div id="whoamiOutput" class="output">
+      <p id="name">Andy Theriault</p>
+      <p class="cli">
+        <span class="red">~/resume</span>
+        <span class="green"> $ </span>
+        <span id="contact"></span>
+      </p>
+    </div>
+    <div id="contactOutput" class="output">
+      <p>role: Web developer</p>
+      <p>email: <a class="play-print" href="mailto:artheriault@gmail.com">artheriault@gmail.com</a></p>
+      <p>phone: 778-967-1675</p>
+      <p>site: <a href="https://terit.github.io" target="_blank">terit.github.io</a></p>
+      <p>linked_in: <a href="https://ca.linkedin.com/in/andytheriault" target="_blank">andy-theriault</a></p>
+      <p>github: <a href="https://github.com/terit" target="_blank">Terit</a></p>
+      <p>~</p>
+      <hr />
+      <p>:q</p>
+      <p class="cli play-print">
+        <span class="red">~/resume</span>
+        <span class="green"> $ </span>
+        <span class="print" onClick="window.print()">Click here to Print</span>
+        <span class="blink"> &#9612;</span>
+      </p>
+    </div>
+  </section>
+  <section id="right">
+    <p class="cli">
+      <span class="red">~/resume</span>
+      <span class="green"> $ </span>
+      <span id="summary"></span>
+    </p>
+    <div class="output" id="summaryOutput">
+      <p class="summary">
+        I'm a Full Stack Web Developer who is passionate about creating functional well designed software. I love working with new languages and technologies. The Odin Project and an intensive bootcamp at Lighthouse Labs have fuelled my hunger for learning. I aim to build upon my skills by immersing myself in new projects and discussing them with others.
+      </p>
+      <p>~</p>
+      <hr />
+      <p>:q</p>
+      <p class="cli">
+        <span class="red">~/resume</span>
+        <span class="green"> $ </span>
+        <span id="projects"></span>
+      </p>
+    </div>
+    <div class="output" id="projectsOutput">
+      &nbsp;
+      <div>
+        <p class="vim"><span>def </span>Photographic Memory</p>
+        <p class="tab">A timed memory match game with images generated from Instagram hashtags. Simple but addictive.</p>
+        <p class="tab">
+          <a href="https://photographic-memory.herokuapp.com" target="_blank"># Demo /</a>
+          <a href="https://github.com/terit/photographic-memory" target="_blank">Source</a>
+        </p>
+        <p class="vim"><span>end</span></p>
+        &nbsp;
+      </div>
+      <div>
+        <p class="vim"><span>def </span>Photographic Memory v2.0</p>
+        <p class="tab">My first ReactJS project not involving a tutorial. I rebuilt the game almost completely from the ground, only repurposing the old Sinatra server to be an API.</p>
+        <p class="tab">
+          <a href="https://photographic.herokuapp.com" target="_blank"># Demo /</a>
+          <a href="https://github.com/terit/react-photographic-memory" target="_blank">Source</a>
+        </p>
+        <p class="vim"><span>end</span></p>
+        &nbsp;
+      </div>
+      <div>
+        <p class="vim"><span>def </span>Rotten Mangoes</p>
+        <p class="tab">A Rotten Tomatoes clone built with Ruby on Rails and theMovieDB API.</p>
+        <p class="tab">
+          <a href="https://johnnyrottenmangoes.herokuapp.com" target="_blank"># Demo /</a>
+          <a href="https://github.com/terit/rotten-mangoes" target="_blank">Source</a>
+        </p>
+        <p class="vim"><span>end</span></p>
+        &nbsp;
+      </div>
+      <div>
+        <p class="vim"><span>def </span>London Drugs Schedule Widget</p>
+        <p class="tab">A Java based Selenium Webdriver program to login in to the London Drugs employee portal and capture my bi-weekly schedule. The exported data was used for a custom Lua Rainmeter desktop widget.</p>
+        <p class="tab">
+          <a href="#" target="_blank"># No Demo /</a>
+          <a href="https://github.com/Terit/LD-Schedule-Getter" target="_blank">Source</a>
+        </p>
+        <p class="vim"><span>end</span></p>
+        &nbsp;
+      </div>
+      <div>
+        <p class="vim"><span>def </span>Full Roster-Event Management</p>
+        <p class="tab">An eloquent solution to running multi-team, multi-sport events. Built with Ruby on Rails with heavy use of Javascript to dynamically load content.</p>
+        <p class="tab">
+          <a href="#" target="_blank"># No Demo /</a>
+          <a href="#" target="_blank">Private Repo</a>
+        </p>
+        <p class="vim"><span>end</span></p>
+        &nbsp;
+      </div>
+      <hr />
+      <p>:q</p>
+      <p class="cli">
+        <span class="red">~/resume</span>
+        <span class="green"> $ </span>
+        <span id="skills"></span>
+      </p>
+    </div>
+    <div class="output" id="skillsOutput">
+      <span></span>
+      <p class="cli">
+        <span class="red">~/resume/skills</span>
+        <span class="green"> $ </span>
+        <span id="ls"></span>
+      </p>
+    </div>
+    <div class="output" id="lsOutput">
+      <table>
+        <tbody>
+          <tr>
+            <td>LANGUAGES</td>
+            <td>Ruby</td>
+            <td>Javascript/ES6</td>
+            <td>Java</td>
+            <td>HTML5</td>
+            <td>CSS3</td>
+            <td>Markdown</td>
+            <td>SQL</td>
+            <td>Elixir</td>
+          </tr>
+          <tr>
+            <td>FRAMEWORKS</td>
+            <td>Rails</td>
+            <td>ReactJS</td>
+            <td>Sinatra</td>
+            <td>Meteor</td>
+            <td>Ember</td>
+            <td>Phoenix</td>
+            <td>Bootstrap</td>
+            <td>Zurb Foundation</td>
+          </tr>
+          <tr>
+            <td>MISCELLANEOUS</td>
+            <td>Git</td>
+            <td>RSpec</td>
+            <td>Heroku</td>
+            <td>AWS</td>
+            <td>Vagrant</td>
+            <td>Redis</td>
+            <td>MySQL</td>
+            <td>Postgresql</td>
+            <td>NodeJS</td>
+            <td>ServiceWorker</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="cli">
+        <span class="red">~/resume/skills</span>
+        <span class="green"> $ </span>
+        <span id="education"></span>
+      </p>
+    </div>
+    <div class="output" id="educationOutput">
+      <span></span>
+      <p class="cli">
+        <span class="red">~/resume/education</span>
+        <span class="green"> $ </span>
+        <span id="educationLoop"></span>
+      </p>
+    </div>
+    <div class="output" id="educationLoopOutput">
+      <div>
+        <p>Lighthouse Labs</p>
+        <p class="tab">Immersive Web Development Bootcamp</p>
+        <p class="tab">2014</p>
+      </div>
+      <div>
+        <p>Camosun College</p>
+        <p class="tab">Computer Science</p>
+        <p class="tab">2012-2013</p>
+      </div>
+      <div>
+        <p>Douglas College</p>
+        <p class="tab">Computer Science</p>
+        <p class="tab">2012</p>
+      </div>
+      <p class="cli">
+        <span class="red">~/resume/education</span>
+        <span class="green"> $ </span>
+        <span id="employment"></span>
+      </p>
+    </div>
+    <div class="output" id="employmentOutput">
+      <span></span>
+      <p class="cli">
+        <span class="red">~/resume/employment</span>
+        <span class="green"> $ </span>
+        <span id="employmentLoop"></span>
+      </p>
+    </div>
+    <div class="output" id="employmentLoopOutput">
+      <div>
+        <p>myBestHelper.com</p>
+        <p class="tab">Ruby on Rails Developer - Feb 2015..Present</p>
+        <p class="double-tab">Maintain and develop myBestHelper.com web app including server maintenance and devops.</p>
+        <p class="double-tab">Plan and execute weekly development sprints.</p>
+        <p class="double-tab">Developed features: Multiple user profiles, Job/Helper matching algorithm, improved admin panel functionality,</p>
+        <p class="double-tab">improve page speed using server side caching, a CDNs, and ServiceWorker API.</p>
+      </div>
+      <div>
+        <p>London Drugs</p>
+        <p class="tab">Customer Service Specialist - Jul 2012..Oct 2014</p>
+        <p class="double-tab">Team player who went beyond the role of ones title</p>
+        <p class="double-tab">Sales orientated position</p>
+        <p class="double-tab">Cash handling</p>
+      </div>
+      <div>
+        <p>Capstone Imaging Supplies</p>
+        <p class="tab">Logistics Managment - Aug 2007..Dec 2011</p>
+        <p class="double-tab">Handled all logistics tasks, including shipping, receiving, and order picking</p>
+        <p class="double-tab">Maintained company network and computer systems</p>
+        <p class="double-tab">Responsible for shipping contract negotiations</p>
+      </div>
+      <p class="cli play-print">
+        <span class="red">~/resume/employment</span>
+        <span class="green"> $ </span>
+        <span id="replay" onClick="resetResume()">Click here to play again,</span>
+        <span class="print" onClick="window.print()">or here to Print</span>
+        <span class="blink"> &#9612;</span>
+      </p>
+      &nbsp;
+    </div>
+  </section>
+
   <script src='./javascripts/vendor/typed.js'></script>
   <script src='./javascripts/resume.js'></script>
+  <script async defer src='./javascripts/register-sw.js'></script>
 </body>
 </html>

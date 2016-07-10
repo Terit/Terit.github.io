@@ -8,11 +8,12 @@
 body {
   --grey: #bbb;
   --wht: #FFF;
-  --primary: #0099FF;
+  --primary: #1E88E5;
+  --background: #607D8B;
   --box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin: 0;
   padding: 0;
-  background: var(--grey);
+  background: var(--background);
 }
 
 a, a:visited, a:hover {

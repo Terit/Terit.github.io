@@ -2,6 +2,7 @@ importScripts('/javascripts/vendor/sw-toolbox.js')
 
 toolbox.router.default = toolbox.fastest;
 toolbox.precache([
+  '/projects.html',
   '/resume.html',
   '/css/resume.css',
   '/javascripts/vendor/jquery.min.js',
