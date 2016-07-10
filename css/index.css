@@ -15,11 +15,17 @@ body {
   background: var(--grey);
 }
 
-a {
+a, a:visited, a:hover {
+  color: var(--primary);
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .header {
+  position: fixed;
   color: var(--primary) !important;
 	background-color: var(--wht);
 	color: blue;
@@ -27,8 +33,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  margin: 0 0 30px 0;
-  font-size: 20px;
+  font-size: 18px;
   box-shadow: var(--box-shadow);
 }
 
@@ -67,20 +72,13 @@ a {
 
 .header-links > * {
   float: right;
-  padding: 0 1%;
-	color: var(--primary);
+  padding: 0 2%;
+
 }
 
 .header-links__menu {
   font-size: 32px;
   display: none;
-}
-
-.header a:visited {
-	color: var(--primary);
-}
-.header a:hover {
-	text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,7 +98,7 @@ a {
 }
 
 .blog {
-  width: 100%;
+  padding-top: 140px;
 }
 
 .blog-item {
@@ -109,5 +107,27 @@ a {
   max-width: 800px;
   margin: 0 auto 20px auto;
   padding: 20px;
-  box-shadow: var(--box-shadow)
+  box-shadow: var(--box-shadow);
+}
+
+.projects {
+  padding-top: 140px;
+}
+
+.projects-item {
+  background: var(--wht);
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.projects-item__img {
+  width: 100%;
+}
+
+.button.button-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }

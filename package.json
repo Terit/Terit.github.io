@@ -19,7 +19,5 @@
   },
   "homepage": "https://Terit.github.io",
   "devDependencies": {
-    "skeleton-css": "^2.0.4",
-    "sw-toolbox": "^3.2.1"
   }
 }

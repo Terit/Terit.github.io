@@ -16,21 +16,21 @@
       </div>
     </div>
     <section class="header-title">
-      <h3>Andy Theriault</h1>
+      <h3><a href="#">Andy Theriault</a></h3>
     </section>
     <section class="header-links">
       <a class="header-links__menu" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-      <a class="header-links__link" href="https://www.linkedin.com/andytheriault">LinkedIn</a>
-      <a class="header-links__link" href="https://www.github.com/terit">Github</a>
-      <a class="header-links__link" href="/projects">Projects</a>
-      <a class="header-links__link" href="/resume">Resume</a>
+      <a class="header-links__link" href="https://www.linkedin.com/in/andytheriault" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      <a class="header-links__link" href="https://www.github.com/terit" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+      <a class="header-links__link" href="/projects"><i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
+      <a class="header-links__link" href="/resume"><i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
     </section>
   </header>
-  <div class="blog">
+  <div class="blog u-full-width">
     <article class="blog-item">
       <h5 class="blog-item__title">April 11, 2016</h5>
       <div class="blog-item__body">
-        <p>The plan after re-doing Photographic Memory was to move onto a larger project to test out some of the other tools that are being used in the <a href="https://facebook.github.io/react/">ReactJS</a> world. However, I was side tracked by this site. I went to write about <a href="https://photographic.herokuapp.com">Photographic Memory 2.0</a>, add it to my <a href="https://Terit.github.io/resume">Resume</a> and <a href="#portfolio">Portfolio</a> and wasn't satisfied with the process. So like anyone with a big rock I spent a few days reworking it to use React!</p><p>To start this one I decided, based on my experience Googling, to use Webpack instead of Gulp to compile this project. Looking back I don't know if I've made the correct choice. I didn't have a great understanding of Gulp to begin with so now is the time to pick a tool and stick with it. Webpack seems to be the build tool of choice right now in the React community, and that certainly helped me get through setting up a working project. It wasn't an easy journey, but I got there with some help by reading a few blog posts. Special thanks to this one <a href="https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.7805n6a4i">by Raja Rao</a> which pointed me in the right direction regarding this site's file structure. There's still some things I could do better like using the HTML plugin and templates instead of hand writing each of my two pages, or figuring how to point my CSS rules to the correct 'images' directory on build.</p><p>After struggling with the Webpack, creating React components was easy and fast. I DRYed up my pages and I was able to extract the parts of my site into JSON objects, which are easier to update and require little boilerplate code. Overall it was good practice in writing simple React components and appreciating a simple application that has no state change.</p><p>Up next, MLB scoreboard...</p><p>Some other helpful links for Webpack: <a href="http://survivejs.com/webpack_react/">SurvieJS Webpack React</a>, <a href="http://rwhitmire.com/2016/04/09/webpack-for-beginners.html">Webpack for beginners</a></p>
+        <p>The plan after re-doing Photographic Memory was to move onto a larger project to test out some of the other tools that are being used in the <a href="https://facebook.github.io/react/" target="_blank">ReactJS</a> world. However, I was side tracked by this site. I went to write about <a href="https://photographic.herokuapp.com">Photographic Memory 2.0</a>, add it to my <a href="/resume">Resume</a> and <a href="/portfolio">Portfolio</a> and wasn't satisfied with the process. So like anyone with a big rock I spent a few days reworking it to use React!</p><p>To start this one I decided, based on my experience Googling, to use Webpack instead of Gulp to compile this project. Looking back I don't know if I've made the correct choice. I didn't have a great understanding of Gulp to begin with so now is the time to pick a tool and stick with it. Webpack seems to be the build tool of choice right now in the React community, and that certainly helped me get through setting up a working project. It wasn't an easy journey, but I got there with some help by reading a few blog posts. Special thanks to this one <a href="https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.7805n6a4i" target="_blank">by Raja Rao</a> which pointed me in the right direction regarding this site's file structure. There's still some things I could do better like using the HTML plugin and templates instead of hand writing each of my two pages, or figuring how to point my CSS rules to the correct 'images' directory on build.</p><p>After struggling with the Webpack, creating React components was easy and fast. I DRYed up my pages and I was able to extract the parts of my site into JSON objects, which are easier to update and require little boilerplate code. Overall it was good practice in writing simple React components and appreciating a simple application that has no state change.</p><p>Up next, MLB scoreboard...</p><p>Some other helpful links for Webpack: <a href="http://survivejs.com/webpack_react/">SurvieJS Webpack React</a>, <a href="http://rwhitmire.com/2016/04/09/webpack-for-beginners.html">Webpack for beginners</a></p>
       </div>
     </article>
     <article class="blog-item">
@@ -47,6 +47,7 @@
     </article>
   </div>
   <script src='./javascripts/index.js'></script>
+  <script src='./javascripts/vendor/ga-tracking.js'></script>
   <script src='./javascripts/register-sw.js'></script>
 </body>
 </html>
