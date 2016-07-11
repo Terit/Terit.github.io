@@ -16,16 +16,33 @@
       </div>
     </div>
     <section class="header-title">
-      <h3><a href="/">Andy Theriault</a></h3>
+      <h3><a href="#">Andy Theriault</a></h3>
     </section>
     <section class="header-links">
-      <a class="header-links__menu" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <button class="js-menu-show header__menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
       <a class="header-links__link" href="https://www.linkedin.com/in/andytheriault" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
       <a class="header-links__link" href="https://www.github.com/terit" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
       <a class="header-links__link" href="/projects"><i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
       <a class="header-links__link" href="/resume"><i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
     </section>
   </header>
+
+  <aside class="js-side-nav side-nav">
+    <nav class="js-side-nav-container side-nav__container">
+      <button class="js-menu-hide side-nav__hide"><i class="fa fa-close"></i></button>
+      <header class="side-nav__header">
+        Andy Theriault
+      </header>
+      <ul class="side-nav__content">
+      <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="/resume"><i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
+        <a href="/projects"><i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
+        <a href="https://www.github.com/terit" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        <a href="https://www.linkedin.com/in/andytheriault" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      </ul>
+    </nav>
+  </aside>
+
   <div class="projects u-full-width">
     <article class="projects-item">
       <h5>
@@ -91,6 +108,8 @@
       </p>
     </article>
   </div>
+
+  <script src='./javascripts/index.js'></script>
   <script async defer src='./javascripts/vendor/ga-tracking.js'></script>
   <script async defer src='./javascripts/register-sw.js'></script>
 </body>
