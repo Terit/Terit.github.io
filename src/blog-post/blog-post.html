@@ -1,0 +1,42 @@
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+
+<dom-module id='blog-post'>
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      article {
+        width: 95%;
+        max-width: 800px;
+        margin: 0 auto 20px auto;
+        background: var(--wht);
+      }
+
+      paper-material {
+        padding: 20px;
+      }
+
+    </style>
+    <article class="blog-item">
+      <paper-material elevation="2">
+        <h5 class="blog-item__title">{{date}}</h5>
+        <div class="blog-item__body">
+          <content></content>
+        </div>
+      </paper-material>
+    </article>
+  </template>
+  <script>
+    Polymer({
+
+      is: 'blog-post',
+
+      properties: {
+        date: String
+      },
+
+    });
+  </script>
+</dom-module>

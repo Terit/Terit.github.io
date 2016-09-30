@@ -1,0 +1,110 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="../../bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-selector/iron-selector.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+
+<link rel="import" href="../blog-page/blog-page.html">
+
+<dom-module id="terit-tech">
+  <template>
+    <style>
+      :host {
+        display: block;
+
+        --grey: #bbb;
+        --wht: #FFF;
+        --primary: #1E88E5;
+        --background: #607D8B;
+
+      }
+
+      * {
+      	-webkit-box-sizing: border-box;
+      	-moz-box-sizing: border-box;
+      	box-sizing: border-box;
+      	font-family: 'Lato', Arial, sans-serif;
+      }
+
+      paper-toolbar {
+        --paper-toolbar-background: var(--wht);
+        --paper-toolbar-color: var(--primary);
+      }
+
+      paper-drawer-panel {
+        --paper-drawer-panel-main-container: {
+          background-color: #607D8B;
+        }
+      }
+
+      a, a:visited, a:hover, button:hover {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a.iron-selected {
+        text-decoration: underline;
+      }
+    </style>
+
+    <app-location route="{{route}}" use-hash-as-path></app-location>
+    <app-route
+      route="{{route}}"
+      pattern="/:page"
+      data="{{pageData}}"
+      tail="{{tail}}">
+    </app-route>
+
+    <app-route
+      route="{{route}}"
+      pattern="/"
+      active="{{blogActive}}">
+    </app-route>
+
+    <paper-drawer-panel force-narrow right-drawer>
+      <div drawer right-drawer>
+        <paper-header-panel drawer>
+         Drawer panel...
+       </paper-header-panel>
+      </div>
+      <main main>
+        <paper-header-panel main waterfall>
+          <paper-toolbar class='tall'>
+            <div class='title'>Andy Theriault</div>
+            <div class="top">
+              <iron-selector selected="[[pageData.page]]" attr-for-selected="data-page">
+                <a data-page="resume" class="header-links__link" href="#/resume"><iron-icon icon="terminal"></iron-icon> Resume</a>
+                <a data-page="projects" class="header-links__link" href="#/projects"><iron-icon icon="folder"></iron-icon> Projects</a>
+                <a class="header-links__link" href="https://www.github.com/terit" target="_blank"><iron-icon icon="github"></iron-icon> Github</a>
+                <a class="header-links__link" href="https://www.linkedin.com/in/andytheriault" target="_blank"><iron-icon icon="linkedin"></iron-icon> LinkedIn</a>
+              </iron-selector>
+            </div>
+          </paper-toolbar>
+          <div class='content fit'>
+          <iron-pages route="{{route}}" selected="{{pageData.page}}" selectedClass="testing">
+            <blog-page active="{{blogActive}}"></blog-page>
+          </iron-pages>
+          </div>
+        </paper-header-panel>
+      </main>
+    </paper-drawer-panel>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'terit-tech',
+
+      properties: {},
+
+    });
+  </script>
+</dom-module>

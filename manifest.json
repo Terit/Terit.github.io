@@ -1,0 +1,7 @@
+{
+  "name": "terit-tech",
+  "short_name": "terit-tech",
+  "description": "Terit.github.io page done in polymer!",
+  "start_url": "/",
+  "display": "standalone"
+}
