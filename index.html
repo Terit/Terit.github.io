@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="shortcut icon" href="/images/terit_favicon.png">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -8,58 +9,222 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andy Theriault</title>
 </head>
+
 <body>
   <header class="header u-full-width">
     <div class="header-portrait js-portrait">
       <div class="header-portrait__reveal js-portrait-reveal">
-        Web developer looking for <i class="fa fa-bug" aria-hidden="true"></i>s to squash!
+        Web developer looking for
+        <i class="fa fa-bug" aria-hidden="true"></i>s to squash!
       </div>
     </div>
-    <section class="header-title">
-      <h3><a href="#">Andy Theriault</a></h3>
+
+    <h3 class="header__title">
+      <a href="#">Andy Theriault</a>
+    </h3>
+
+    <section class="header__links">
+      <a class="header__link" href="/resume">
+        <i class="fa fa-terminal" aria-hidden="true"></i>
+        <span>Resume</span>
+      </a>
+      <a class="header__link" href="/projects">
+        <i class="fa fa-folder" aria-hidden="true"></i>
+        <span>Projects</span>
+      </a>
+      <a class="header__link" href="https://www.github.com/terit" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <span>Github</span>
+      </a>
+      <a class="header__link" href="https://www.linkedin.com/in/andytheriault" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <span>LinkedIn</span>
+      </a>
     </section>
-    <section class="header-links">
-      <button class="js-menu-show header__menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
-      <a class="header-links__link" href="https://www.linkedin.com/in/andytheriault" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-      <a class="header-links__link" href="https://www.github.com/terit" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-      <a class="header-links__link" href="/projects"><i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
-      <a class="header-links__link" href="/resume"><i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
-    </section>
+
+    <button class="js-menu-show header__menu-toggle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
   </header>
 
   <aside class="js-side-nav side-nav">
     <nav class="js-side-nav-container side-nav__container">
-      <button class="js-menu-hide side-nav__hide"><i class="fa fa-close"></i></button>
+      <button class="js-menu-hide side-nav__hide">
+        <i class="fa fa-close"></i>
+      </button>
       <header class="side-nav__header">
         Andy Theriault
       </header>
       <ul class="side-nav__content">
-      <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-        <a href="/resume"><i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
-        <a href="/projects"><i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
-        <a href="https://www.github.com/terit" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-        <a href="https://www.linkedin.com/in/andytheriault" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        <a href="/">
+          <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="/resume">
+          <i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
+        <a href="/projects">
+          <i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
+        <a href="https://www.github.com/terit" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        <a href="https://www.linkedin.com/in/andytheriault" target="_blank">
+          <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
       </ul>
     </nav>
   </aside>
 
   <div class="blog u-full-width">
     <article class="blog-item">
-      <h5 class="blog-item__title">April 11, 2016</h5>
+      <h5 class="blog-item__title" data-heading="Feb 11 2017">
+        Feb 11 2018
+      </h5>
       <div class="blog-item__body">
-        <p>The plan after re-doing Photographic Memory was to move onto a larger project to test out some of the other tools that are being used in the <a href="https://facebook.github.io/react/" target="_blank">ReactJS</a> world. However, I was side tracked by this site. I went to write about <a href="https://photographic.herokuapp.com">Photographic Memory 2.0</a>, add it to my <a href="/resume">Resume</a> and <a href="/portfolio">Portfolio</a> and wasn't satisfied with the process. So like anyone with a big rock I spent a few days reworking it to use React!</p><p>To start this one I decided, based on my experience Googling, to use Webpack instead of Gulp to compile this project. Looking back I don't know if I've made the correct choice. I didn't have a great understanding of Gulp to begin with so now is the time to pick a tool and stick with it. Webpack seems to be the build tool of choice right now in the React community, and that certainly helped me get through setting up a working project. It wasn't an easy journey, but I got there with some help by reading a few blog posts. Special thanks to this one <a href="https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.7805n6a4i" target="_blank">by Raja Rao</a> which pointed me in the right direction regarding this site's file structure. There's still some things I could do better like using the HTML plugin and templates instead of hand writing each of my two pages, or figuring how to point my CSS rules to the correct 'images' directory on build.</p><p>After struggling with the Webpack, creating React components was easy and fast. I DRYed up my pages and I was able to extract the parts of my site into JSON objects, which are easier to update and require little boilerplate code. Overall it was good practice in writing simple React components and appreciating a simple application that has no state change.</p><p>Up next, MLB scoreboard...</p><p>Some other helpful links for Webpack: <a href="http://survivejs.com/webpack_react/">SurvieJS Webpack React</a>, <a href="http://rwhitmire.com/2016/04/09/webpack-for-beginners.html">Webpack for beginners</a></p>
+        <h4>Fresh coat of paint</h4>
+        <p>I recently bought the domain theriault.rocks and setup a redirect here for
+          <a href="#">andy.theriault.rocks</a>. This reminded me how poor my colour choices were, so I fixed that!
+        </p>
+
+        <p>I think it looks much better. This also let me play with a few new CSS rules(to me), namely
+          <i>clip-path</i>, and fix up a few others due to more familarity with
+          <i>flex-box</i>. Boy do I ❤️&nbsp;
+          <i>flex-box</i>, it makes everything just move into place, center middle aligned never felt so good.
+        </p>
+      </div>
+    </article>
+
+    <article class="blog-item">
+      <h5 class="blog-item__title" data-heading="Nov 04 2017">
+        Nov 04 2017
+      </h5>
+      <div class="blog-item__body">
+        <h4>Healthcare, Blockchains, and a Hackathon</h4>
+        <p>It's been a while! I've been busy working on a new Healthcare app for Careteam Technologies since October of 2016.
+          This spring I bought in(literally) to the blockchain hype and most recently I participated in my first external
+          hackathon.
+        </p>
+
+        <p>
+          Let's start with the oldest news, I'm now working for
+          <a href="https://careteam.tech">Careteam Technologies</a>. We are developing a healthcare app to help patients recover successfully by giving them
+          tools to coordinate care with their personal network and access the information they need. This project has given
+          me a chance to develop a green field project make impactful decisions. It's also exposed me to the world of extra
+          privacy and security compliance from HIIPA and other regulations.
+        </p>
+
+        <p>
+          Next up this spring, I first heard the whispers of Ethereum and cryptocurrencies. I had previously tried to work out how
+          to mine Bitcoin but at the time I wasn't saavy enough to setup my GPU to earn those now $15,000+ coins. Flash forward
+          to today, and when I heard about Ethereum and the latest surge of Bitcoin I decided it was good time to get in,
+          which wasn't easy. At the time there was a big rush on new buyers trying to register with exchanges which lead
+          to longer verification times. This compounded with the easy route Coinbase, being unable to process my credit card
+          lead to a delayed departure to the 🚀 moon 🚀.
+        </p>
+
+        <p>
+          Lastly, I participated in my first external hackathon. It was put on by a local company
+          <a href="https://bluzelle.com">Bluzelle</a>, who are building a distributed database product, the perfect solution for people build distributed
+          apps(dApps). The theme was to build a dApp which could take advantage of their database. However their database
+          wasn't ready for us to use during the hackathon, so our project was to build a prototype of it. In less than 2
+          days. It didn't go so well. Our plan was to register ServiceWorkers to be used as nodes where we could push data
+          to and retrieve a consensus from all the online nodes in the cluster. Unfortunately we were a very inexperienced
+          team and couldn't demo a working app so we placed in the other-rans. I may pick up this project sometime in the
+          future as I like ServiceWorkers and I think the concept has some possibilities.
+        </p>
+
+        <p>
+          Hackathon project:
+          <a href="https://github.com/jyclam/hackathon-bluzelle-server">Backend</a>,
+          <a href="https://github.com/John-Nenniger/Service_worker">ServiceWorker Registration</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="blog-item">
+      <h5 class="blog-item__title" data-heading="Jul 10 2016">
+        Jul 10 2016
+      </h5>
+      <div class="blog-item__body">
+        <h4>No more React</h4>
+        <p>After coming back to post something here I realised my simple React version of this blog wasn't so easy to update...
+        </p>
+        <p>So I removed React and switched to a basic HTML/CSS/ES6, this has allowed me to practice a little more vanilla JS
+          and play with CSS variables! If you're not familar with CSS variables check out
+          <a href="https://css-tricks.com/difference-between-types-of-css-variables/">this article</a> from CSS-Tricks that covers the basics and a few cool demos. Of course these changes don't do
+          anything for the ease of uploading, but at least I don't need to make sure I have all the node modules installed
+          before I can even think of starting.
+        </p>
+
+        <p>This took away a lot of my motivation to build that MLB scoreboard I mention in the last post. Maybe next time...</p>
+      </div>
+    </article>
+
+    <article class="blog-item">
+      <h5 class="blog-item__title" data-heading="April 11 2016">
+        April 11 2016
+      </h5>
+      <div class="blog-item__body">
+        <h4>Blog build tools</h4>
+        <p>The plan after re-doing Photographic Memory was to move onto a larger project to test out some of the other tools
+          that are being used in the
+          <a href="https://facebook.github.io/react/" target="_blank">ReactJS</a> world. However, I was side tracked by this site. I went to write about
+          <a href="https://photographic.herokuapp.com">Photographic Memory 2.0</a>, add it to my
+          <a href="/resume">Resume</a> and
+          <a href="/portfolio">Portfolio</a> and wasn't satisfied with the process. So like anyone with a big rock I spent a few days reworking
+          it to use React!</p>
+        <p>To start this one I decided, based on my experience Googling, to use Webpack instead of Gulp to compile this project.
+          Looking back I don't know if I've made the correct choice. I didn't have a great understanding of Gulp to begin
+          with so now is the time to pick a tool and stick with it. Webpack seems to be the build tool of choice right now
+          in the React community, and that certainly helped me get through setting up a working project. It wasn't an easy
+          journey, but I got there with some help by reading a few blog posts. Special thanks to this one
+          <a href="https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9#.7805n6a4i" target="_blank">by Raja Rao</a> which pointed me in the right direction regarding this site's file structure. There's still some
+          things I could do better like using the HTML plugin and templates instead of hand writing each of my two pages,
+          or figuring how to point my CSS rules to the correct 'images' directory on build.</p>
+        <p>After struggling with the Webpack, creating React components was easy and fast. I DRYed up my pages and I was able
+          to extract the parts of my site into JSON objects, which are easier to update and require little boilerplate code.
+          Overall it was good practice in writing simple React components and appreciating a simple application that has
+          no state change.</p>
+        <p>Up next, MLB scoreboard...</p>
+        <p>Some other helpful links for Webpack:
+          <a href="http://survivejs.com/webpack_react/">SurvieJS Webpack React</a>,
+          <a href="http://rwhitmire.com/2016/04/09/webpack-for-beginners.html">Webpack for beginners</a>
+        </p>
       </div>
     </article>
     <article class="blog-item">
-      <h5 class="blog-item__title">April 8, 2016</h5>
+      <h5 class="blog-item__title" data-heading="April 08 2016">
+        April 08 2016
+      </h5>
       <div class="blog-item__body">
-        <p>Recently I've been playing with <a href="https://facebook.github.io/react/">ReactJS</a>. I started my journey by finding a few tutorials to pick up the basics. Doing so I realised my Javascript skills were a little rusty, working mostly in Ruby at <a href="https://mybesthelper.com/" target="_blank">myBestHelper</a> and most of our Javascript is written in <a href="https://jquery.com/">jQuery</a>. Familiarizing myself with vanilla JS allowed me to better follow along with the concepts and strength of ReactJS.</p><p>Once the tutorials had done their job, I started to think about ways I could test my new skills. That led me to my favourite project I wrote at Lighthouse Labs, <a href="https://photographic-memory.herokuapp.com" target="_blank">Photographic Memory</a>! I always liked working on that project because the game was so fun to play. That is why I was so motivated to complete the game again. It was also the project where I wrote the most javascript.</p><p>Reflecting on the project, I think I made a great choice. With so much state changing throughout the game I got a much better understanding of React component state, props and the React API. It also allowed me the chance to break my page into smaller and smaller components as I went along. I also got a chance to try my hand at ES6, Babel, and Gulp; more things I wasn"t very familar with before I started this.</p><p>Check out the finished version <a href="https://photographic.herokuapp.com" target="_blank">here</a> or the repository <a href="https://github.com/terit/react-photographic-memory" target="_blank">here</a>.</p><p>Up next I'm going to rewrite another Lighthouse Labs project, Rotten Mangoes. I think it's a good chance to try a more robust project with user accounts, multiple database models and a more complex application. It will also give me a chance to write a Node.js API server with the possibility of a universal/isomorphic refactor in the future.</p><p>Stay tuned for more.</p>
+        <h4>Photographic Memory updates</h4>
+        <p>Recently I've been playing with
+          <a href="https://facebook.github.io/react/">ReactJS</a>. I started my journey by finding a few tutorials to pick up the basics. Doing so I realised my Javascript
+          skills were a little rusty, working mostly in Ruby at
+          <a href="https://mybesthelper.com/" target="_blank">myBestHelper</a> and most of our Javascript is written in
+          <a href="https://jquery.com/">jQuery</a>. Familiarizing myself with vanilla JS allowed me to better follow along with the concepts and strength
+          of ReactJS.</p>
+        <p>Once the tutorials had done their job, I started to think about ways I could test my new skills. That led me to my
+          favourite project I wrote at Lighthouse Labs,
+          <a href="https://photographic-memory.herokuapp.com" target="_blank">Photographic Memory</a>! I always liked working on that project because the game was so fun to play. That is why
+          I was so motivated to complete the game again. It was also the project where I wrote the most javascript.</p>
+        <p>Reflecting on the project, I think I made a great choice. With so much state changing throughout the game I got a
+          much better understanding of React component state, props and the React API. It also allowed me the chance to break
+          my page into smaller and smaller components as I went along. I also got a chance to try my hand at ES6, Babel,
+          and Gulp; more things I wasn"t very familar with before I started this.</p>
+        <p>Check out the finished version
+          <a href="https://photographic.herokuapp.com" target="_blank">here</a> or the repository
+          <a href="https://github.com/terit/react-photographic-memory" target="_blank">here</a>.</p>
+        <p>Up next I'm going to rewrite another Lighthouse Labs project, Rotten Mangoes. I think it's a good chance to try a
+          more robust project with user accounts, multiple database models and a more complex application. It will also give
+          me a chance to write a Node.js API server with the possibility of a universal/isomorphic refactor in the future.</p>
+        <p>Stay tuned for more.</p>
       </div>
     </article>
     <article class="blog-item">
-      <h5 class="blog-item__title">Welcome 2015</h5>
+      <h5 class="blog-item__title" data-heading="Dec 14 2015">Dec 14 2015</h5>
       <div class="blog-item__body">
-        <p>Welcome to my site, have a look around you might see something you like. If you do feel free to contact me through <a href="https://www.linkedin.com/in/andytheriault" target="_blank">LinkedIn</a> or email me directly <a href="mailto:andy@terit.tech" target="_blank">here</a>. My career as a web developer is just getting started so check back regularly as I update my profile.</p><p>Currently I'm working for <a href="https://mybesthelper.com/" target="_blank">myBestHelper</a>, a company which helps families find babysitters, nannies or any sort of helper they need.</p>
+        <h4>Welcome</h4>
+        <p>Welcome to my site, have a look around you might see something you like. If you do feel free to contact me through
+          <a href="https://www.linkedin.com/in/andytheriault" target="_blank">LinkedIn</a> or email me directly
+          <a href="mailto:andy@terit.tech" target="_blank">here</a>. My career as a web developer is just getting started so check back regularly as I update my profile.</p>
+        <p>Currently I'm working for
+          <a href="https://mybesthelper.com/" target="_blank">myBestHelper</a>, a company which helps families find babysitters, nannies or any sort of helper they need.</p>
       </div>
     </article>
   </div>
@@ -67,4 +232,5 @@
   <script async defer src='./javascripts/vendor/ga-tracking.js'></script>
   <script async defer src='./javascripts/register-sw.js'></script>
 </body>
+
 </html>
