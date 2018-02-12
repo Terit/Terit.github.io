@@ -1,14 +1,14 @@
 'use strict';
 
-function Portrait() {
+function Portrait () {
   const portrait = document.querySelector('.js-portrait');
 
-  function revealMore() {
+  function revealMore () {
     const more = document.querySelector('.js-portrait-reveal');
     more.classList = 'header-portrait__reveal js-portrait-reveal reveal';
   }
 
-  function revealLess() {
+  function revealLess () {
     const more = document.querySelector('.js-portrait-reveal');
     more.classList = 'header-portrait__reveal js-portrait-reveal';
   }
@@ -48,14 +48,16 @@ class SideNav {
   // apply passive event listening if it's supported
   applyPassive () {
     if (this.supportsPassive !== undefined) {
-      return this.supportsPassive ? {passive: true} : false;
+      return this.supportsPassive ? { passive: true } : false;
     }
     // feature detect
     let isSupported = false;
     try {
-      document.addEventListener('test', null, {get passive () {
-        isSupported = true;
-      }});
+      document.addEventListener('test', null, {
+        get passive () {
+          isSupported = true;
+        }
+      });
     } catch (e) { }
     this.supportsPassive = isSupported;
     return this.applyPassive();
@@ -131,14 +133,12 @@ class SideNav {
   showSideNav () {
     this.sideNavEl.classList.add('side-nav--animatable');
     this.sideNavEl.classList.add('side-nav--visible');
-    this.detabinator.inert = false;
     this.sideNavEl.addEventListener('transitionend', this.onTransitionEnd);
   }
 
   hideSideNav () {
     this.sideNavEl.classList.add('side-nav--animatable');
     this.sideNavEl.classList.remove('side-nav--visible');
-    this.detabinator.inert = true;
     this.sideNavEl.addEventListener('transitionend', this.onTransitionEnd);
   }
 }
