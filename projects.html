@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="shortcut icon" href="/images/terit_favicon.png">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -8,37 +9,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andy Theriault</title>
 </head>
+
 <body>
   <header class="header u-full-width">
     <div class="header-portrait js-portrait">
       <div class="header-portrait__reveal js-portrait-reveal">
-        Web developer looking for <i class="fa fa-bug" aria-hidden="true"></i>s to squash!
+        Web developer looking for
+        <i class="fa fa-bug" aria-hidden="true"></i>s to squash!
       </div>
     </div>
-    <section class="header-title">
-      <h3><a href="#">Andy Theriault</a></h3>
+
+    <h3 class="header__title">
+      <a href="/">Andy Theriault</a>
+    </h3>
+
+    <section class="header__links">
+      <a class="header__link" href="/resume">
+        <i class="fa fa-terminal" aria-hidden="true"></i>
+        <span>Resume</span>
+      </a>
+      <a class="header__link" href="/projects">
+        <i class="fa fa-folder" aria-hidden="true"></i>
+        <span>Projects</span>
+      </a>
+      <a class="header__link" href="https://www.github.com/terit" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <span>Github</span>
+      </a>
+      <a class="header__link" href="https://www.linkedin.com/in/andytheriault" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <span>LinkedIn</span>
+      </a>
     </section>
-    <section class="header-links">
-      <button class="js-menu-show header__menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
-      <a class="header-links__link" href="https://www.linkedin.com/in/andytheriault" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-      <a class="header-links__link" href="https://www.github.com/terit" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-      <a class="header-links__link" href="/projects"><i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
-      <a class="header-links__link" href="/resume"><i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
-    </section>
+
+    <button class="js-menu-show header__menu-toggle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
   </header>
 
   <aside class="js-side-nav side-nav">
     <nav class="js-side-nav-container side-nav__container">
-      <button class="js-menu-hide side-nav__hide"><i class="fa fa-close"></i></button>
+      <button class="js-menu-hide side-nav__hide">
+        <i class="fa fa-close"></i>
+      </button>
       <header class="side-nav__header">
         Andy Theriault
       </header>
       <ul class="side-nav__content">
-      <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-        <a href="/resume"><i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
-        <a href="/projects"><i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
-        <a href="https://www.github.com/terit" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-        <a href="https://www.linkedin.com/in/andytheriault" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        <a href="/">
+          <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="/resume">
+          <i class="fa fa-terminal" aria-hidden="true"></i> Resume</a>
+        <a href="/projects">
+          <i class="fa fa-folder" aria-hidden="true"></i> Projects</a>
+        <a href="https://www.github.com/terit" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        <a href="https://www.linkedin.com/in/andytheriault" target="_blank">
+          <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
       </ul>
     </nav>
   </aside>
@@ -54,7 +81,9 @@
 
       <img class="projects-item__img" src="/images/portfolio/photographic.png" />
 
-      <p>A memory match game using Instagram hashtags. Built using a Sinatra framework for the API and an all new ReactJS front end.</p>
+      <p>A memory match game using Instagram hashtags. Built using a Sinatra framework for the API and an all new ReactJS front
+        end.
+      </p>
       <p>
         <a class="button" href="#">Demo</a>
         <small>No longer maintained due to changes in Instagram's API.</small>
@@ -70,7 +99,8 @@
 
       <img class="projects-item__img" src="/images/portfolio/fullroster.png" />
 
-      <p>An eloquent solution to running a multi-team, multi-sport event for anyone. Built with Ruby on Rails with lots of dynamic content being loaded via Javascript.</p>
+      <p>An eloquent solution to running a multi-team, multi-sport event for anyone. Built with Ruby on Rails with lots of dynamic
+        content being loaded via Javascript.</p>
       <p>
         <a class="button" href="#">Demo</a>
         <small>No demo available as software was only used for Corporate Champions Vancouver 2015.</small>
@@ -102,7 +132,8 @@
 
       <img class="projects-item__img" src="/images/portfolio/rottenmangoes.png" />
 
-      <p>My first Ruby on Rails app, a Rotten Tomatoes clone. Features include Users, Admins who can ghost other users, search bar and advanced search.</p>
+      <p>My first Ruby on Rails app, a Rotten Tomatoes clone. Features include Users, Admins who can ghost other users, search
+        bar and advanced search.</p>
       <p>
         <a class="button button-primary" href="https://johnnyrottenmangoes.herokuapp.com" target="_blank">Demo</a>
       </p>
@@ -113,4 +144,5 @@
   <script async defer src='./javascripts/vendor/ga-tracking.js'></script>
   <script async defer src='./javascripts/register-sw.js'></script>
 </body>
+
 </html>
