@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="shortcut icon" href="/images/terminal.png">
   <link rel="stylesheet" href="/css/resume.css">
@@ -7,6 +8,7 @@
   <script src='./javascripts/vendor/jquery.min.js'></script>
   <title>Andy Theriault - Resume</title>
 </head>
+
 <body>
   <header>
     <p class="cli">
@@ -16,7 +18,7 @@
       <a href="/">~/Home</a>
       <a href="/projects">~/Projects</a>
       <a class="header-links__link" href="https://www.github.com/terit" target="_blank">~/Github</a>
-      <a class="header-links__link" href="https://www.linkedin.com/in/andytheriault" target="_blank">~/LinkenIn</a>
+      <a class="header-links__link" href="https://www.linkedin.com/in/andytheriault" target="_blank">~/LinkedIn</a>
     </p>
     <hr />
   </header>
@@ -38,7 +40,7 @@
       <p>role: Web developer</p>
       <p>email: <a class="play-print" href="mailto:artheriault@gmail.com">artheriault@gmail.com</a></p>
       <p>phone: 778-967-1675</p>
-      <p>site: <a href="https://terit.github.io" target="_blank">terit.github.io</a></p>
+      <p>site: <a href="https://terit.github.io" target="_blank">andy.theriault.rocks</a></p>
       <p>linked_in: <a href="https://ca.linkedin.com/in/andytheriault" target="_blank">andy-theriault</a></p>
       <p>github: <a href="https://github.com/terit" target="_blank">Terit</a></p>
       <p>~</p>
@@ -58,36 +60,172 @@
       <span class="green"> $ </span>
       <span id="summary"></span>
     </p>
+
     <div class="output" id="summaryOutput">
-      <p class="summary">
-        I'm a Full Stack Web Developer who is passionate about creating functional well designed software. I love working with new languages and technologies. The Odin Project and an intensive bootcamp at Lighthouse Labs have fuelled my hunger for learning. I aim to build upon my skills by immersing myself in new projects and discussing them with others.
-      </p>
+      <div class="summary">
+        <p>
+          Focused individual with strong background in software development with hands-on experience in demanding work
+          environments.
+        </p>
+        <ul>
+          <li>
+            <b>Project Management:</b> Success in executing projects involving architecture and software development,
+            implementation, testing, and deployment. Employ collaborative development methodologies to deliver new
+            technologies and ensure optimal performance on complex projects.
+          </li>
+          <li>
+            <b>Software Development:</b> Adept at translating client requirements, developing and delivering software
+            in
+            line with budgetary, time, and quality constraints.
+          </li>
+          <li>
+            <b>Key Strengths:</b> Possess a combination of strong analytical, problem solving, and communication
+            skills. Deft at establishing rapport across multiple levels in an organisation.
+          </li>
+        </ul>
+      </div>
       <p>~</p>
       <hr />
       <p>:q</p>
       <p class="cli">
         <span class="red">~/resume</span>
         <span class="green"> $ </span>
+        <span id="employment"></span>
+      </p>
+    </div>
+    <!-- EMPLOYMENT -->
+    <div class="output" id="employmentOutput">
+      <span></span>
+      <p class="cli">
+        <span class="red">~/resume/employment</span>
+        <span class="green"> $ </span>
+        <span id="employmentLoop"></span>
+      </p>
+    </div>
+
+    <div class="output" id="employmentLoopOutput">
+      <div>
+        <a href="https://careteam.tech">Careteam Technologies Inc.</a>
+        <p>Software Developer - July 2017..Current</p>
+        <p class="tab">
+          Oversee detailed analysis for the identification of client requirements and develop software solutions
+          through seamless coordination with team of highly skilled developers. Adhere to all quality and security
+          guidelines and project milestones set by the stakeholders; integrate new software development technologies
+          and tools to keep project up-to-date.
+        </p>
+        <br>
+        <p class="double-tab">Led a Greenfield healthcare project by leading UX/UI teams for responsive design
+          implementation.</p>
+        <p class="double-tab">Supported end-users through delivery of an offline ready and a full-page search library.</p>
+        </p>
+        <p class="double-tab">Created and administered a robust data structure in compliance with HIPAA guidelines.</p>
+        </p>
+      </div>
+      <br>
+      <div>
+        <a href="https://www.mybesthelper.com">myBestHelper Solutions Inc.</a>
+        <p>Software Developer - Feb 2015..July 2017</p>
+        <p class="tab">
+          Ensure healthy operations of myBestHelper.com through periodic integration of new features,
+          delivering seamless user experience while simultaneously assuring site security. Critically analyze the
+          source code, identify deficiencies, and provide recommendations. Collaborate with scrum team and strategize
+          all work activities through regular sprint planning. Contribute towards skillset and professional development
+          of new developers through training and mentoring.
+        </p>
+        <br>
+        <p class="double-tab">
+          Designed innovative services and leveraged NodeJS for effective management of incoming email parsing,
+          internal metrics
+          dashboard, and internal Slack bot.
+        </p>
+        <p class="double-tab">
+          Constructed a Facebook chat bot through tactful utilization of AWS Lambda for search results parsing.
+        </p>
+      </div>
+      <!-- SKILLS CLI -->
+      <p class="cli">
+        <span class="red">~/resume/employment</span>
+        <span class="green"> $ </span>
+        <span id="skills"></span>
+      </p>
+    </div>
+    <!-- SKILLS -->
+    <div class="output" id="skillsOutput">
+      <span></span>
+      <p class="cli">
+        <span class="red">~/resume</span>
+        <span class="green"> $ </span>
+        <span id="ls"></span>
+      </p>
+    </div>
+
+    <div class="output" id="lsOutput">
+      <table>
+        <tbody>
+          <tr>
+            <td>LANGUAGES</td>
+            <td>Ruby</td>
+            <td>Javascript/ES6</td>
+            <td>HTML/CSS</td>
+            <td>SQL</td>
+          </tr>
+          <tr>
+            <td>FRAMEWORKS</td>
+            <td>Ruby on Rails</td>
+            <td>Express</td>
+            <td>ReactJS</td>
+            <td>Polymer</td>
+          </tr>
+          <tr>
+            <td>MISCELLANEOUS</td>
+            <td>AWS / Azure</td>
+            <td>Git</td>
+            <td>Redis</td>
+            <td>Web APIs</td>
+            <td>Docker</td>
+            <td>Webpack</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="cli">
+        <span class="red">~/resume</span>
+        <span class="green"> $ </span>
         <span id="projects"></span>
       </p>
     </div>
+
+    <!-- PROJECTS -->
     <div class="output" id="projectsOutput">
-      &nbsp;
+      ~
       <div>
-        <p class="vim"><span>def </span>Photographic Memory</p>
-        <p class="tab">A timed memory match game with images generated from Instagram hashtags. Simple but addictive.</p>
+        <p class="vim"><span>def </span>Bluzelle Hackathon Project</p>
+        <p class="tab">Created a distributed database with the ability to store and synchronize data across
+          ServiceWorker nodes in a cluster.</p>
         <p class="tab">
-          <a href="https://photographic-memory.herokuapp.com" target="_blank"># Demo</a>
+          <a href="https://github.com/John-Nenniger/Service_worker" target="_blank"># Node</a>
+          <p class="tab">
+            <a href="https://github.com/jyclam/hackathon-bluzelle-server" target="_blank"># Cluster</a>
+          </p>
+        </p>
+        <p class="vim"><span>end</span></p>
+        &nbsp;
+      </div>
+      <div>
+        <p class="vim"><span>def </span>Doug Loves Movies Game</p>
+        <p class="tab">Developed a game based on movie trivia podcast Doug Loves Movies.</p>
+        <p class="tab">
+          <a href="#" target="_blank"># No Demo</a>
         </p>
         <p class="tab">
-          <a href="https://github.com/terit/photographic-memory" target="_blank"># Source</a>
+          <a href="https://github.com/Terit/dlm" target="_blank"># Source</a>
         </p>
         <p class="vim"><span>end</span></p>
         &nbsp;
       </div>
       <div>
         <p class="vim"><span>def </span>Photographic Memory v2.0</p>
-        <p class="tab">My first ReactJS project not involving a tutorial. I rebuilt the game almost completely from the ground, only repurposing the old Sinatra server to be an API.</p>
+        <p class="tab">Designed a timed memory match game with images from Instagram hashtags.</p>
         <p class="tab">
           <a href="https://photographic.herokuapp.com" target="_blank"># Demo</a>
         </p>
@@ -98,8 +236,21 @@
         &nbsp;
       </div>
       <div>
+        <p class="vim"><span>def </span>Full Roster-Event Management</p>
+        <p class="tab">Spearheaded a comprehensive solution by using Ruby on Rails for systematic management of
+          multi-team and multi-sportevent for users.</p>
+        <p class="tab">
+          <a href="#" target="_blank"># No Demo</a>
+        </p>
+        <p class="tab">
+          <a href="#" target="_blank"># Private Repo</a>
+        </p>
+        <p class="vim"><span>end</span></p>
+        &nbsp;
+      </div>
+      <div>
         <p class="vim"><span>def </span>Rotten Mangoes</p>
-        <p class="tab">A Rotten Tomatoes clone built with Ruby on Rails and theMovieDB API.</p>
+        <p class="tab">A Rotten Tomatoes clone built with Ruby on Rails.</p>
         <p class="tab">
           <a href="https://johnnyrottenmangoes.herokuapp.com" target="_blank"># Demo</a>
         </p>
@@ -112,7 +263,8 @@
       </div>
       <div>
         <p class="vim"><span>def </span>London Drugs Schedule Widget</p>
-        <p class="tab">A Java based Selenium Webdriver program to login in to the London Drugs employee portal and capture my bi-weekly schedule. The exported data was used for a custom Lua Rainmeter desktop widget.</p>
+        <p class="tab">Built a Java based application for logging in to the London Drugs employee portal and accurate
+          capturing of bi-weekly schedule for the Rainmaster widget.</p>
         <p class="tab">
           <a href="#" target="_blank"># No Demo</a>
         </p>
@@ -120,82 +272,18 @@
           <a href="https://github.com/Terit/LD-Schedule-Getter" target="_blank"># Source</a>
         </p>
         <p class="vim"><span>end</span></p>
-        &nbsp;
-      </div>
-      <div>
-        <p class="vim"><span>def </span>Full Roster-Event Management</p>
-        <p class="tab">An eloquent solution to running multi-team, multi-sport events. Built with Ruby on Rails with heavy use of Javascript to dynamically load content.</p>
-        <p class="tab">
-          <a href="#" target="_blank"># No Demo</a>
-        </p>
-        <p class="tab">
-          <a href="#" target="_blank"># Private Repo</a>
-        </p>
-        <p class="vim"><span>end</span></p>
-        &nbsp;
+        ~
       </div>
       <hr />
       <p>:q</p>
       <p class="cli">
         <span class="red">~/resume</span>
         <span class="green"> $ </span>
-        <span id="skills"></span>
-      </p>
-    </div>
-    <div class="output" id="skillsOutput">
-      <span></span>
-      <p class="cli">
-        <span class="red">~/resume/skills</span>
-        <span class="green"> $ </span>
-        <span id="ls"></span>
-      </p>
-    </div>
-    <div class="output" id="lsOutput">
-      <table>
-        <tbody>
-          <tr>
-            <td>LANGUAGES</td>
-            <td>Ruby</td>
-            <td>Javascript/ES6</td>
-            <td>Java</td>
-            <td>HTML5</td>
-            <td>CSS3</td>
-            <td>Markdown</td>
-            <td>SQL</td>
-            <td>Elixir</td>
-          </tr>
-          <tr>
-            <td>FRAMEWORKS</td>
-            <td>Rails</td>
-            <td>ReactJS</td>
-            <td>Sinatra</td>
-            <td>Meteor</td>
-            <td>Ember</td>
-            <td>Phoenix</td>
-            <td>Bootstrap</td>
-            <td>Zurb Foundation</td>
-          </tr>
-          <tr>
-            <td>MISCELLANEOUS</td>
-            <td>Git</td>
-            <td>RSpec</td>
-            <td>Heroku</td>
-            <td>AWS</td>
-            <td>Vagrant</td>
-            <td>Redis</td>
-            <td>MySQL</td>
-            <td>Postgresql</td>
-            <td>NodeJS</td>
-            <td>ServiceWorker</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="cli">
-        <span class="red">~/resume/skills</span>
-        <span class="green"> $ </span>
         <span id="education"></span>
       </p>
     </div>
+
+    <!-- EDUCATION -->
     <div class="output" id="educationOutput">
       <span></span>
       <p class="cli">
@@ -204,6 +292,7 @@
         <span id="educationLoop"></span>
       </p>
     </div>
+
     <div class="output" id="educationLoopOutput">
       <div>
         <p>Lighthouse Labs</p>
@@ -220,45 +309,8 @@
         <p class="tab">Computer Science</p>
         <p class="tab">2012</p>
       </div>
-      <p class="cli">
-        <span class="red">~/resume/education</span>
-        <span class="green"> $ </span>
-        <span id="employment"></span>
-      </p>
-    </div>
-    <div class="output" id="employmentOutput">
-      <span></span>
-      <p class="cli">
-        <span class="red">~/resume/employment</span>
-        <span class="green"> $ </span>
-        <span id="employmentLoop"></span>
-      </p>
-    </div>
-    <div class="output" id="employmentLoopOutput">
-      <div>
-        <p>myBestHelper.com</p>
-        <p class="tab">Ruby on Rails Developer - Feb 2015..Present</p>
-        <p class="double-tab">Maintain and develop myBestHelper.com web app including server maintenance and devops.</p>
-        <p class="double-tab">Plan and execute weekly development sprints.</p>
-        <p class="double-tab">Developed features: Multiple user profiles, Job/Helper matching algorithm, improved admin panel functionality,</p>
-        <p class="double-tab">improve page speed using server side caching, a CDNs, and ServiceWorker API.</p>
-      </div>
-      <div>
-        <p>London Drugs</p>
-        <p class="tab">Customer Service Specialist - Jul 2012..Oct 2014</p>
-        <p class="double-tab">Team player who went beyond the role of ones title</p>
-        <p class="double-tab">Sales orientated position</p>
-        <p class="double-tab">Cash handling</p>
-      </div>
-      <div>
-        <p>Capstone Imaging Supplies</p>
-        <p class="tab">Logistics Managment - Aug 2007..Dec 2011</p>
-        <p class="double-tab">Handled all logistics tasks, including shipping, receiving, and order picking</p>
-        <p class="double-tab">Maintained company network and computer systems</p>
-        <p class="double-tab">Responsible for shipping contract negotiations</p>
-      </div>
       <p class="cli play-print">
-        <span class="red">~/resume/employment</span>
+        <span class="red">~/resume/education</span>
         <span class="green"> $ </span>
         <span id="replay" onClick="resetResume()">Click here to play again,</span>
         <span class="print" onClick="window.print()">or here to Print</span>
@@ -273,4 +325,5 @@
   <script async defer src='./javascripts/vendor/ga-tracking.js'></script>
   <script async defer src='./javascripts/register-sw.js'></script>
 </body>
+
 </html>

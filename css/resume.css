@@ -1,10 +1,20 @@
 body {
   background-color: #222;
+  color: white;
+  cursor: text;
   font-family: 'Anonymous Pro';
   font-size: 14px;
   font-weight: 700;
-  color: white;
-  cursor: text;
+  margin: 0;
+}
+
+header {
+  background: #222;
+  height: 20px;
+  padding: 10px 2%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .play-print {
@@ -16,9 +26,10 @@ body {
 }
 
 section {
-  padding: 0 0 0 2%;
-  height: 100%;
   float: left;
+  height: 100%;
+  margin: 40px 0 0;
+  padding: 0 0 0 2%;
 }
 
 hr {
@@ -100,6 +111,10 @@ td {
 
   header {
     display: none;
+  }
+
+  section {
+    margin: 0;
   }
 
   .play-print {

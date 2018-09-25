@@ -15,39 +15,39 @@ const resumeConfig = [
     "delay": 3000
   },
   {
-    "element": "#projects",
-    "string": "vim projects.rb ",
-    "delay": 6000
-  },
-  {
-    "element": "#skills",
-    "string": "cd skills",
-    "delay": 9000
-  },
-  {
-    "element": "#ls",
-    "string": "ls -l",
-    "delay": 11000
-  },
-  {
-    "element": "#education",
-    "string": "cd ../education",
-    "delay": 14000
-  },
-  {
-    "element": "#educationLoop",
-    "string": "for school in schools; do echo $school; done",
-    "delay": 16000
-  },
-  {
     "element": "#employment",
-    "string": "cd ../employment",
-    "delay": 22000
+    "string": "cd employment",
+    "delay": 6000
   },
   {
     "element": "#employmentLoop",
     "string": "cat jobs.txt ",
-    "delay": 25000
+    "delay": 9000
+  },
+  {
+    "element": "#skills",
+    "string": "cd ..",
+    "delay": 11000
+  },
+  {
+    "element": "#ls",
+    "string": "ls -l skills",
+    "delay": 13000
+  },
+  {
+    "element": "#projects",
+    "string": "vim projects.rb ",
+    "delay": 16000
+  },
+  {
+    "element": "#education",
+    "string": "cd education",
+    "delay": 22000
+  },
+  {
+    "element": "#educationLoop",
+    "string": "for school in schools; do echo $school; done;",
+    "delay": 24000
   }
 ];
 
@@ -61,21 +61,21 @@ const typer = ({ element, string, delay }) => new Promise((resolve) => {
     onStringTyped: () => {
       $(`${element}Output`).delay(delay).show();
       resolve();
-    },
+    }
   });
 });
 
-const type = () => {
-  resumeConfig.map(typer);
-};
+const type = () => resumeConfig.map(typer);
 
 const resetResume = () => {
   $('.output').hide();
   $(`#whoami, #contact, #summary, #projects, #skills, #ls,
     #education, #educationLoop, #employment, #employmentLoop`)
-      .typed('reset');
+    .typed('reset');
   window.scrollTo(0, 0);
   type();
 };
 
-setTimeout(type, 1000);
+window.addEventListener('load', () => {
+  setTimeout(type, 1000);
+})
